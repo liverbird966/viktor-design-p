@@ -123,14 +123,10 @@ footer{
 
 .footer-distributed{
 	background-color: #1e1835;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
-	width: 100%;
+	width: -webkit-fill-available;
 	text-align: left;
-	font: bold 16px sans-serif;
- 
-	padding: 55px 50px;
-	margin-top: 80px;
+	padding: 35px 50px;
 }
  
 .footer-distributed .footer-left,
@@ -177,48 +173,37 @@ footer{
  
  
 .footer-distributed .footer-center{
-	width: 35%;
-}
- 
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
- 
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
-}
- 
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-	vertical-align: middle;
-	margin:0;
-}
- 
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
- 
-.footer-distributed .footer-center p a{
-	color:  #5383d3;
-	text-decoration: none;;
+	h6 {
+		color: $color-white;
+		font-weight: 700;
+	}
+	i{
+		color: #ffffff;
+		font-size: 22px;
+		height: 38px;
+		line-height: 42px;
+		margin-right: 15px;
+		vertical-align: middle;
+	}
+	i.fa-envelope{
+		font-size: 17px;
+		line-height: 38px;
+	}
+	p{
+		display: inline-block;
+		color: #ffffff;
+		vertical-align: middle;
+		margin:0;
+	}
+	p a{
+		color:  #5383d3;
+	}
+	width: 29.33%;
+	margin-left: 9.5em;
 }
  
 .footer-distributed .footer-right{
-	width: 20%;
+	width: 28%;
 }
  
 .footer-distributed .footer-company-about{
@@ -231,9 +216,9 @@ footer{
  
 .footer-distributed .footer-company-about span{
 	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
+	color:  $color-white;
+	font-size: 16px;
+	font-weight: 700;
 	margin-bottom: 20px;
 }
  
@@ -242,20 +227,17 @@ footer{
 }
  
 .footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
- 
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
- 
-	margin-right: 3px;
-	margin-bottom: 5px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin: 0em 2em 0em 0em;
+    width: 0px;
+	:hover {
+		color: #5383d3;
+	}
 }
 
 .footer-icons {
@@ -267,8 +249,7 @@ footer{
 @media (max-width: 880px) {
  
 	.footer-distributed{
-		font: bold 14px sans-serif;
-	
+		font-size: 14px;
 	}
  
 	.footer-distributed .footer-left,
@@ -276,8 +257,8 @@ footer{
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
-		margin-bottom: 40px;
 		text-align: center;
+		margin-left: 0em;
 	}
  
 	.footer-distributed .footer-center i{
