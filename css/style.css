@@ -19,9 +19,9 @@ a {
   padding: 0;
   text-transform: uppercase; }
   .navbar-brand img {
-    width: 4em;
-    padding-top: 0.4em;
-    padding-bottom: 0.4em; }
+    width: 3.65em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em; }
 
 .navbar {
   padding: 0;
@@ -136,13 +136,13 @@ footer {
     font-weight: 700; }
   .footer-distributed .footer-center i {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 18px;
     height: 38px;
     line-height: 42px;
     margin-right: 15px;
     vertical-align: middle; }
   .footer-distributed .footer-center i.fa-envelope {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 38px; }
   .footer-distributed .footer-center p {
     display: inline-block;
