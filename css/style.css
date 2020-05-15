@@ -170,13 +170,13 @@ footer {
   margin-top: 25px; }
 
 .footer-distributed .footer-icons a {
-  display: inline-block;
+  display: table;
   cursor: pointer;
   font-size: 25px;
   color: #fff;
   text-align: center;
   line-height: 35px;
-  margin: 0em 2em 0em 0em;
+  margin: 0em 1em;
   width: 0px; }
   .footer-distributed .footer-icons a :hover {
     color: #5383d3; }

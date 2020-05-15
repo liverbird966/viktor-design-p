@@ -204,10 +204,6 @@ footer{
 	width: 28%;
 }
  
-// .footer-distributed .footer-right{
-// 	padding-right: 1em;
-// }
- 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
@@ -229,13 +225,13 @@ footer{
 }
  
 .footer-distributed .footer-icons a{
-    display: inline-block;
+    display: table;
     cursor: pointer;
     font-size: 25px;
-    color: #fff;
+    color: $color-white;
     text-align: center;
     line-height: 35px;
-    margin: 0em 2em 0em 0em;
+    margin: 0em 1em;
     width: 0px;
 	:hover {
 		color: #5383d3;
