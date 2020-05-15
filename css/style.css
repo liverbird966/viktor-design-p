@@ -93,7 +93,7 @@ footer {
   text-align: left;
   padding: 35px 50px; }
   .footer-distributed .col-lg-3 {
-    width: 24.7%; }
+    width: 24.4%; }
 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
@@ -166,9 +166,6 @@ footer {
   font-weight: 700;
   margin-bottom: 20px; }
 
-.footer-distributed .footer-icons {
-  margin-top: 25px; }
-
 .footer-distributed .footer-icons a {
   display: table;
   cursor: pointer;
@@ -176,13 +173,20 @@ footer {
   color: #fff;
   text-align: center;
   line-height: 35px;
-  margin: 0em 1em;
+  margin: 0em 0.8em;
   width: 0px; }
   .footer-distributed .footer-icons a :hover {
     color: #5383d3; }
 
 .footer-icons {
   justify-content: center;
+  display: flex; }
+
+.year {
+  margin-bottom: 0em;
+  padding-top: 1em;
+  font-size: 0.9em;
+  color: #fff;
   display: flex; }
 
 @media (max-width: 880px) {

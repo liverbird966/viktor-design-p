@@ -123,7 +123,7 @@ footer{
 
 .footer-distributed{
 	.col-lg-3 {
-		width: 24.7%;
+		width: 24.4%;
 	}
 	background-color: #1e1835;
 	box-sizing: border-box;
@@ -219,10 +219,7 @@ footer{
 	font-weight: 700;
 	margin-bottom: 20px;
 }
- 
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
+
  
 .footer-distributed .footer-icons a{
     display: table;
@@ -231,7 +228,7 @@ footer{
     color: $color-white;
     text-align: center;
     line-height: 35px;
-    margin: 0em 1em;
+    margin: 0em 0.8em;
     width: 0px;
 	:hover {
 		color: #5383d3;
@@ -241,6 +238,14 @@ footer{
 .footer-icons {
     justify-content: center;
     display: flex;
+}
+
+.year {
+	margin-bottom: 0em;
+	padding-top: 1em;
+    font-size: 0.9em;
+	color: $color-white;
+	display: flex;
 }
  
  
