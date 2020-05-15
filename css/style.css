@@ -92,6 +92,8 @@ footer {
   width: -webkit-fill-available;
   text-align: left;
   padding: 35px 50px; }
+  .footer-distributed .col-lg-3 {
+    width: 24.7%; }
 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
@@ -128,8 +130,7 @@ footer {
   margin: 0; }
 
 .footer-distributed .footer-center {
-  width: 29.33%;
-  margin-left: 9.5em; }
+  width: 28%; }
   .footer-distributed .footer-center h6 {
     color: #fff;
     font-weight: 700; }
@@ -150,9 +151,6 @@ footer {
     margin: 0; }
   .footer-distributed .footer-center p a {
     color: #5383d3; }
-
-.footer-distributed .footer-right {
-  width: 28%; }
 
 .footer-distributed .footer-company-about {
   line-height: 20px;

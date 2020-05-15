@@ -122,6 +122,9 @@ footer{
 }
 
 .footer-distributed{
+	.col-lg-3 {
+		width: 24.7%;
+	}
 	background-color: #1e1835;
 	box-sizing: border-box;
 	width: -webkit-fill-available;
@@ -198,13 +201,12 @@ footer{
 	p a{
 		color:  #5383d3;
 	}
-	width: 29.33%;
-	margin-left: 9.5em;
-}
- 
-.footer-distributed .footer-right{
 	width: 28%;
 }
+ 
+// .footer-distributed .footer-right{
+// 	padding-right: 1em;
+// }
  
 .footer-distributed .footer-company-about{
 	line-height: 20px;
