@@ -24,19 +24,18 @@ a {
     padding-bottom: 0.6em; }
 
 .navbar {
-  padding: 0;
-  background: #1e1835; }
+  padding: 0; }
   .navbar .navbar-nav {
     text-transform: uppercase; }
   .navbar .nav-link {
-    color: #fff !important;
+    color: #45413e !important;
     font-size: 0.93em; }
   .navbar .nav-icons img {
     width: 1.65em;
     height: 1.65em;
-    filter: invert(1); }
+    filter: invert(59%) sepia(0%) saturate(2391%) hue-rotate(138deg) brightness(3%) contrast(28%); }
   .navbar .nav-icons img:hover {
-    filter: invert(20%) sepia(307%) saturate(1558%) hue-rotate(669deg) brightness(101%) contrast(355%); }
+    filter: invert(75%) sepia(307%) saturate(1558%) hue-rotate(682deg) brightness(61%) contrast(388%); }
   .navbar .nav-icons button {
     background: none;
     border: none; }
@@ -48,10 +47,10 @@ a {
   .navbar-nav li a:before, .navbar-nav li a:after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -17px;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 2.5px;
     background-color: #ce0000; }
   .navbar-nav li a:before {
     opacity: 0;
@@ -69,8 +68,61 @@ a {
   .navbar-nav li a:hover:after {
     transition: transform 0s 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.3s; }
 
+/*--------------Slider-under-menu-----------------*/
+.bg-slider {
+  background-color: #262a32;
+  padding: 1.5em; }
+
+.bg-slider .slick-slider {
+  width: 45em;
+  height: 23em; }
+
+.bg-slider .slick-slider .slick-list {
+  border-radius: 0.5em; }
+
+.bg-slider .slick-dotted.slick-slider {
+  margin: 0px auto 40px auto; }
+
+.bg-slider .slick-dots {
+  bottom: -40px; }
+  .bg-slider .slick-dots :before {
+    font-size: 45px;
+    color: #8a8a8a;
+    opacity: .6; }
+
+.bg-slider .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: .8; }
+
+.bg-slider .slick-prev {
+  left: -70px; }
+
+.bg-slider .slick-next {
+  right: -70px; }
+
+.bg-slider .slick-next:before {
+  font-family: FontAwesome;
+  font-size: 26px;
+  content: "\f0a9"; }
+
+.bg-slider .slick-prev:before {
+  font-family: FontAwesome;
+  font-size: 26px;
+  content: "\f0a8"; }
+
+.slider-img-u-menu img {
+  width: 45em;
+  height: 23em; }
+
+.slider-menu-heading {
+  color: #fff;
+  font-family: "Lato ExtraBold";
+  text-align: center;
+  padding-bottom: 1.3em; }
+
+/*-------------------Footer-----------------*/
 footer {
-  position: fixed;
+  position: inherit;
   bottom: 0; }
 
 .footer-distributed .footer-left {
@@ -84,10 +136,10 @@ footer {
     padding-bottom: 1em; }
 
 .separate-line hr {
-  border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  border-top: 1px solid rgba(0, 0, 0, 0.26); }
 
 .footer-distributed {
-  background-color: #1e1835;
+  background-color: #fff;
   box-sizing: border-box;
   width: -webkit-fill-available;
   text-align: left;
@@ -105,12 +157,11 @@ footer {
   width: 40%; }
 
 .footer-distributed h3 {
-  color: #ffffff;
+  color: #45413e;
   font: normal 36px 'Cookie', cursive;
   margin: 0; }
-
-.footer-distributed h3 span {
-  color: #5383d3; }
+  .footer-distributed h3 span {
+    color: #5383d3; }
 
 .footer-distributed .footer-links {
   color: #ffffff;
@@ -132,10 +183,10 @@ footer {
 .footer-distributed .footer-center {
   width: 28%; }
   .footer-distributed .footer-center h6 {
-    color: #fff;
+    color: #45413e;
     font-weight: 700; }
   .footer-distributed .footer-center i {
-    color: #ffffff;
+    color: #45413e;
     font-size: 18px;
     height: 38px;
     line-height: 42px;
@@ -146,7 +197,7 @@ footer {
     line-height: 38px; }
   .footer-distributed .footer-center p {
     display: inline-block;
-    color: #ffffff;
+    color: #45413e;
     vertical-align: middle;
     margin: 0; }
   .footer-distributed .footer-center p a {
@@ -158,19 +209,18 @@ footer {
   font-size: 13px;
   font-weight: normal;
   margin: 0; }
-
-.footer-distributed .footer-company-about span {
-  display: block;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 20px; }
+  .footer-distributed .footer-company-about span {
+    display: block;
+    color: #45413e;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px; }
 
 .footer-distributed .footer-icons a {
   display: table;
   cursor: pointer;
   font-size: 23px;
-  color: #fff;
+  color: #45413e;
   text-align: center;
   line-height: 35px;
   margin: 0em 0.8em;
@@ -184,9 +234,10 @@ footer {
 
 .year {
   margin-bottom: 0em;
-  padding-top: 1em;
+  padding-bottom: 0em;
+  margin-top: 2em;
   font-size: 0.9em;
-  color: #fff;
+  color: #45413e;
   display: flex; }
 
 @media (max-width: 880px) {

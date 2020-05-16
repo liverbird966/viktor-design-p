@@ -9,12 +9,14 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <!-- Styles -->
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
 <!-- Title -->
 <title>Portfolio</title>
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg static-top">
+<nav class="navbar navbar-expand-lg bg-white static-top">
     <div class="container">
         <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" alt="logo">
@@ -47,9 +49,31 @@
 
     </div>
 </nav>
+<!-------------------------------- Slider-under-menu---------------------------------------------------->
+<div class="bg-slider">
+  <div class="container">
+    <div class="slider-menu-heading">
+      <h1>Finalized Projects</h1>
+    </div>
+    <div class="slide-on-top slider">
+      <div class="slider-img-u-menu">
+            <img src="images/slider-image-7.jpg" alt="slider-image-7">
+      </div>
+      <div class="slider-img-u-menu">
+        <img src="images/slider-image-2.jpg" alt="slider-image-2">
+      </div>
+      <div class="slider-img-u-menu">
+        <img src="images/slider-image-5.jpg" alt="slider-image-5">
+      </div>
+      <div class="slider-img-u-menu">
+        <img src="images/slider-image-1.jpg" alt="slider-image-4">
+      </div>
+    </div>
+  </div>
+</div>
 
 
-
+<!-------------------------------- Slider-under-menu-end--------------------------------------------------->
 <footer class="footer-distributed">
   <div class="container">
       <div class="footer-left">
@@ -124,5 +148,19 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="js/year-footer.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+      $(document).ready(function(){
+        $('.slider').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          // autoplay: true,
+          // autoplaySpeed: 10000
+        });
+        
+    });
+</script>
 </body>
 </html>
