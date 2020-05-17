@@ -11,6 +11,9 @@ a {
   text-decoration: none;
   outline: none; }
 
+h1 {
+  font-family: "Lato ExtraBold"; }
+
 p {
   font-family: "Lato Regular"; }
 
@@ -18,6 +21,9 @@ p {
   outline: none !important; }
 
 /*-------------------Menu-----------------*/
+.shadow-sm {
+  box-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, 0.1) !important; }
+
 .navbar-brand {
   padding: 0;
   text-transform: uppercase; }
@@ -71,6 +77,34 @@ p {
   .navbar-nav li a:hover:after {
     transition: transform 0s 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.3s; }
 
+/*-------------Full width image--------------*/
+.full-width-image {
+  position: sticky;
+  width: auto;
+  height: 100%;
+  background-image: url(../images/design-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  padding: 1em 1em 1em 1em;
+  background-position: center;
+  box-shadow: inset 0 0 20em #000000; }
+
+.f-image_text {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 9em; }
+
+.f-image_text h1 {
+  font-size: 4.04em;
+  color: darkslategray; }
+
+.f-image_text p {
+  font-size: 1.1em;
+  color: darkslategray; }
+
+/*-------------Full width image end--------------*/
 /*--------------Slider-under-menu-----------------*/
 .bg-slider {
   background-color: #262a32;
@@ -124,11 +158,12 @@ p {
     background-color: #fff;
     width: 35em;
     justify-content: center;
-    display: inline-flex; }
+    display: inline-flex;
+    height: .03em; }
 
 /*-------------------Footer-----------------*/
 footer {
-  position: inherit;
+  position: relative;
   bottom: 0; }
 
 .footer-distributed .footer-left {

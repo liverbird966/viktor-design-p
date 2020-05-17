@@ -22,6 +22,10 @@ a {
     outline: none; 
 }
 
+h1 {
+	font-family: "Lato ExtraBold";
+}
+
 p {
 	font-family: "Lato Regular";
 }
@@ -32,6 +36,10 @@ p {
 
 
 /*-------------------Menu-----------------*/
+.shadow-sm {
+	box-shadow: 0 0.05rem .05rem rgba(0,0,0,.1)!important;
+}
+
 .navbar-brand {
     img {
 		width: 3.65em;
@@ -106,6 +114,38 @@ p {
     }
 }
 
+/*-------------Full width image--------------*/
+.full-width-image {
+	position: sticky;
+	width: auto;
+	height: 100%;
+	background-image: url(../images/design-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: auto;
+	padding: 1em 1em 1em 1em; 
+    background-position: center; 
+	box-shadow: inset 0 0 20em #000000;
+}
+  
+  .f-image_text {
+	position: relative;
+	text-align: center;
+	color: $color-white;
+	padding: 9em; }
+  
+  .f-image_text h1 {
+	font-size: 4.04em;
+	color: darkslategray;
+}
+  
+  .f-image_text p {
+	font-size: 1.1em;
+	color: darkslategray;
+}
+
+/*-------------Full width image end--------------*/
+
 /*--------------Slider-under-menu-----------------*/
 .bg-slider {
 	background-color: #262a32;
@@ -169,6 +209,7 @@ p {
 		width: 35em;
 		justify-content: center;
 		display: inline-flex;
+		height: .03em;
 	}
 	color: $color-white;
 	font-family: $lato-bold;
@@ -184,7 +225,7 @@ p {
 /*-------------------Footer-----------------*/
 
 footer{
-    position: inherit;
+    position: relative;
     bottom: 0;
 }
 

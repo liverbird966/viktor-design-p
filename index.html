@@ -16,7 +16,7 @@
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg bg-white sticky-top">
+<nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="index.html">
             <img src="images/logo-2.png" alt="logo">
@@ -49,12 +49,22 @@
 
     </div>
 </nav>
+
+<!-------------------------------- Full width image---------------------------------------------------->
+<div class="full-width-image">
+  <div class="f-image_text">
+    <h1>Design</h1>
+      <br>
+      <p>Not everyone can see it</p>
+  </div>
+</div>
+<!-------------------------------- Full width image-end--------------------------------------------------->
 <!-------------------------------- Slider-under-menu---------------------------------------------------->
 <div class="bg-slider">
   <div class="container">
     <div class="slider-menu-heading">
-      <h1>Favourites</h1>
-      <p>Final work from Photoshop</p>
+      <h1>Recent Work</h1>
+      <p>All images are made with Photoshop</p>
       <hr>
     </div>
     <div class="slide-on-top slider">
@@ -140,7 +150,7 @@
 </div>
 <div class="container">
   <p class="year justify-content-center">
-    <span id="copyright">&copy; Copyright </span>.&nbsp;All Rights Reserved.
+    <span id="copyright">&copy; Copyright </span>.&nbsp;&nbsp;All Rights Reserved.
   </p>
 </div>
   </footer>
@@ -155,10 +165,10 @@
       $(document).ready(function(){
         $('.slider').slick({
           infinite: true,
-          speed: 300,
+          speed: 600,
           slidesToShow: 2,
-          // autoplay: true,
-          // autoplaySpeed: 10000
+          autoplay: true,
+          autoplaySpeed: 5000
         });
         
     });
