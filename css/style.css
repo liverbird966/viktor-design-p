@@ -11,6 +11,9 @@ a {
   text-decoration: none;
   outline: none; }
 
+p {
+  font-family: "Lato Regular"; }
+
 *:focus {
   outline: none !important; }
 
@@ -51,7 +54,7 @@ a {
     left: 0;
     right: 0;
     height: 2.5px;
-    background-color: #ce0000; }
+    background-color: #5383d3; }
   .navbar-nav li a:before {
     opacity: 0;
     transform: translateY(-10px);
@@ -75,30 +78,24 @@ a {
 
 .bg-slider .slick-slider {
   width: 45em;
-  height: 23em; }
-
-.bg-slider .slick-slider .slick-list {
-  border-radius: 0.5em; }
+  height: 20em;
+  margin-left: auto;
+  margin-right: auto; }
 
 .bg-slider .slick-dotted.slick-slider {
   margin: 0px auto 40px auto; }
 
-.bg-slider .slick-dots {
-  bottom: -40px; }
-  .bg-slider .slick-dots :before {
-    font-size: 45px;
-    color: #8a8a8a;
-    opacity: .6; }
-
-.bg-slider .slick-dots li.slick-active button:before {
-  color: white;
-  opacity: .8; }
-
 .bg-slider .slick-prev {
-  left: -70px; }
+  left: 50px; }
 
 .bg-slider .slick-next {
-  right: -70px; }
+  right: 50px; }
+
+.bg-slider .slick-next {
+  top: -14.3%; }
+
+.bg-slider .slick-prev {
+  top: -14.3%; }
 
 .bg-slider .slick-next:before {
   font-family: FontAwesome;
@@ -111,14 +108,23 @@ a {
   content: "\f0a8"; }
 
 .slider-img-u-menu img {
-  width: 45em;
-  height: 23em; }
+  width: 25em;
+  height: 16em;
+  padding-left: 1.5em;
+  padding-right: 4em; }
 
 .slider-menu-heading {
   color: #fff;
   font-family: "Lato ExtraBold";
   text-align: center;
   padding-bottom: 1.3em; }
+  .slider-menu-heading p {
+    font-size: larger; }
+  .slider-menu-heading hr {
+    background-color: #fff;
+    width: 35em;
+    justify-content: center;
+    display: inline-flex; }
 
 /*-------------------Footer-----------------*/
 footer {
