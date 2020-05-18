@@ -123,7 +123,8 @@ p {
   color: #fff;
   text-align: center; }
   .carousel-top .carousel-caption h1 {
-    padding-bottom: 1em; }
+    padding-bottom: 1em;
+    font-size: 3em; }
   .carousel-top .carousel-caption a {
     text-decoration: none;
     font-family: 'Lato Regular';
@@ -150,7 +151,7 @@ p {
   color: #fff;
   display: block;
   text-align: center;
-  margin: 3.5em auto 2.5em auto;
+  margin: 2.8em auto 2em auto;
   padding: 0;
   border-radius: 9em;
   border: 1.5px solid #fff;
@@ -181,14 +182,12 @@ p {
   text-align: center;
   color: #fff;
   padding: 9em; }
-
-.f-image_text h1 {
-  font-size: 4.04em;
-  color: darkslategray; }
-
-.f-image_text p {
-  font-size: 1.1em;
-  color: darkslategray; }
+  .f-image_text h1 {
+    font-size: 4.04em;
+    color: darkslategray; }
+  .f-image_text p {
+    font: normal 1.1em 'Cookie', cursive;
+    color: darkslategray; }
 
 /*-------------Full width image end--------------*/
 /*--------------Slider-under-menu-----------------*/
