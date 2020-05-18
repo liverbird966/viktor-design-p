@@ -132,7 +132,8 @@ p {
 
 .carousel-top .carousel-indicators {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  bottom: 0.7em; }
   .carousel-top .carousel-indicators li {
     width: 12px;
     height: 12px;
