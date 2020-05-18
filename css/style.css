@@ -70,13 +70,15 @@ p {
     opacity: 0;
     transform: translateY(5px);
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s; }
-  .navbar-nav li a:hover:before, .navbar-nav li a:hover:after {
-    opacity: 1;
-    transform: translateY(0); }
-  .navbar-nav li a:hover:before {
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s; }
-  .navbar-nav li a:hover:after {
-    transition: transform 0s 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.3s; }
+  .navbar-nav li a:hover {
+    color: #5383d3 !important; }
+    .navbar-nav li a:hover:before, .navbar-nav li a:hover:after {
+      opacity: 1;
+      transform: translateY(0); }
+    .navbar-nav li a:hover:before {
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s; }
+    .navbar-nav li a:hover:after {
+      transition: transform 0s 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.3s; }
 
 .custom-select {
   padding: .15rem 1.75rem .4rem .75rem;
@@ -106,19 +108,15 @@ p {
 
 /*----------------Carousel on top-----------------*/
 .carousel-top .carousel {
-  height: 26em;
-  margin: 1.5em auto; }
+  height: 26em; }
 
 .carousel-top .carousel-item {
   height: 26em; }
 
-.carousel-top .carousel-inner {
-  border-radius: 0.5em; }
-
 .carousel-top .carousel-caption {
   position: absolute;
-  right: 9.5%;
-  left: 9.5%;
+  right: 19.5%;
+  left: 19.5%;
   z-index: 10;
   color: #fff;
   text-align: center; }
@@ -159,9 +157,10 @@ p {
   text-transform: uppercase;
   transition: .3s; }
   .carousel-top .button_carousel_1:hover {
-    color: #45413e;
-    background-color: #fff;
-    text-decoration: none; }
+    color: #fff;
+    background-color: #5383d3;
+    text-decoration: none;
+    border: 1.5px solid #5383d3; }
 
 /*----------------Carousel on top end-----------------*/
 /*-------------Full width image--------------*/

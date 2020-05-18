@@ -58,7 +58,7 @@ p {
     }
     .nav-link {
         color: $color-gray!important;
-        font-size: 0.93em;
+		font-size: 0.93em;
     }
 
     .nav-icons img {
@@ -110,7 +110,8 @@ p {
         }
         &:after {
             transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
-        }
+		}
+		color: $color-blue!important;
     }
 }
 
@@ -148,15 +149,10 @@ p {
 /*----------------Carousel on top-----------------*/
 .carousel-top .carousel {
 	height: 26em;
-	margin: 1.5em auto;
 }
 
 .carousel-top .carousel-item {
 	height: 26em;
-}
-
-.carousel-top .carousel-inner {
-	border-radius: 0.5em;
 }
 
 .carousel-top .carousel-caption {
@@ -170,8 +166,8 @@ p {
 		cursor: auto;
 	}
 	position: absolute;
-	right: 9.5%;
-	left: 9.5%;
+	right: 19.5%;
+	left: 19.5%;
 	z-index: 10;
 	color: $color-white;
 	text-align: center; 
@@ -209,9 +205,10 @@ p {
 	text-transform: uppercase;
 	transition: .3s;
 	&:hover {
-		color: $color-gray;
-		background-color: $color-white;
+		color: $color-white;
+		background-color: $color-blue;
 		text-decoration: none; 
+		border: 1.5px solid $color-blue;
 	}
 }
 /*----------------Carousel on top end-----------------*/
