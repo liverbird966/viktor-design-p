@@ -9,7 +9,8 @@ body {
 
 a {
   text-decoration: none;
-  outline: none; }
+  outline: none;
+  font-family: 'Lato Regular'; }
 
 h1 {
   font-family: "Lato ExtraBold"; }
@@ -22,7 +23,7 @@ p {
 
 /*-------------------Menu-----------------*/
 .shadow-sm {
-  box-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, 0.1) !important; }
+  box-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, 0.18) !important; }
 
 .navbar-brand {
   padding: 0;
@@ -43,8 +44,8 @@ p {
     width: 1.65em;
     height: 1.65em;
     filter: invert(59%) sepia(0%) saturate(2391%) hue-rotate(138deg) brightness(3%) contrast(28%); }
-  .navbar .nav-icons img:hover {
-    filter: invert(75%) sepia(307%) saturate(1558%) hue-rotate(682deg) brightness(61%) contrast(388%); }
+    .navbar .nav-icons img:hover {
+      filter: invert(75%) sepia(307%) saturate(1558%) hue-rotate(539deg) brightness(68%) contrast(149%); }
   .navbar .nav-icons button {
     background: none;
     border: none; }
@@ -103,6 +104,65 @@ p {
   margin: 0;
   float: left; }
 
+/*----------------Carousel on top-----------------*/
+.carousel-top .carousel {
+  height: 26em;
+  margin: 1.5em auto; }
+
+.carousel-top .carousel-item {
+  height: 26em; }
+
+.carousel-top .carousel-inner {
+  border-radius: 0.5em; }
+
+.carousel-top .carousel-caption {
+  position: absolute;
+  right: 9.5%;
+  left: 9.5%;
+  z-index: 10;
+  color: #fff;
+  text-align: center; }
+  .carousel-top .carousel-caption h1 {
+    padding-bottom: 1em; }
+  .carousel-top .carousel-caption a {
+    text-decoration: none;
+    font-family: 'Lato Regular';
+    cursor: auto; }
+
+.carousel-top .carousel-indicators {
+  margin-left: auto;
+  margin-right: auto; }
+  .carousel-top .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 3px solid transparent; }
+    .carousel-top .carousel-indicators li.active {
+      background: transparent;
+      border: 3px solid #fff;
+      width: 12px;
+      height: 12px; }
+
+.carousel-top .button_carousel_1 {
+  cursor: pointer;
+  width: 10.5em;
+  height: 2.8em;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 3.5em auto 2.5em auto;
+  padding: 0;
+  border-radius: 9em;
+  border: 1.5px solid #fff;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: .3s; }
+  .carousel-top .button_carousel_1:hover {
+    color: #45413e;
+    background-color: #fff;
+    text-decoration: none; }
+
+/*----------------Carousel on top end-----------------*/
 /*-------------Full width image--------------*/
 .full-width-image {
   position: sticky;
@@ -192,6 +252,25 @@ footer {
   position: relative;
   bottom: 0; }
 
+.footer-company-about ul {
+  margin: auto; }
+
+.footer-company-about li {
+  list-style-type: none;
+  padding-top: .55em; }
+  .footer-company-about li :hover {
+    color: #5383d3; }
+
+.footer-company-about a {
+  font-family: 'Lato Regular';
+  font-size: 13px;
+  color: #92999f;
+  text-decoration: none;
+  z-index: 1; }
+
+.footer-company-about .top-li {
+  padding-top: 0em; }
+
 .footer-distributed .footer-left {
   width: auto !important;
   justify-content: center;
@@ -231,7 +310,7 @@ footer {
     color: #5383d3; }
 
 .footer-distributed .footer-links {
-  color: #ffffff;
+  color: #fff;
   margin: 20px 0 12px;
   padding: 0; }
 
