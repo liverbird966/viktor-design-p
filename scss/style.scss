@@ -1,7 +1,7 @@
 $red: #ce0000;
 $color-blue: #5383d3; 
 $color-white: #fff;
-$color-gray: #45413e;
+$color-gray: #262a32;
 $duration: .3s;
 $distance: 10px;
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
@@ -218,6 +218,36 @@ p {
 	}
 }
 /*----------------Carousel on top end-----------------*/
+
+/*-------------Work cards--------------*/
+.work-cards {
+	background-color: $color-gray;
+}
+
+.title-cards {
+	h1 {
+		margin: auto;
+		padding-top: 1em;
+		padding-bottom: 1.3em;
+		hr {
+			background-color: $color-white;
+		}
+	}
+	#hr-1-card {
+		margin: 0.6em auto;
+		float: left;
+		width: 10em;
+	}
+	#hr-2-card {
+		margin: 0.6em auto;
+		width: 10em;
+		float: right;
+	}
+}
+
+
+
+/*-------------Work cards end--------------*/
 
 /*-------------Full width image--------------*/
 .full-width-image {
