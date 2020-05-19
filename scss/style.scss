@@ -197,12 +197,15 @@ p {
 }
 
 .carousel-top .carousel-item {
+	img {
+		height: fit-content;
+	}
 	height: 26em;
 }
 
 .carousel-top .carousel-caption {
 	p1 {
-		width: 201em;
+		width: -webkit-fill-available;
 	}
 	h1 {
 		padding-bottom: 0.5em;
@@ -320,7 +323,7 @@ p {
 	position: relative;
 	text-align: center;
 	color: $color-white;
-	padding: 9em; 
+	padding: 7.9em; 
 }
 
 /*-------------Full width image end--------------*/
