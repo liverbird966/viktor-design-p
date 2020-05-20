@@ -27,8 +27,13 @@ h1 {
 	font-family: "Lato ExtraBold";
 }
 
+h6 {
+	font-family: "Lato Regular";
+}
+
 p {
 	font-family: "Lato Regular";
+	margin-bottom: 0;
 }
 
 *:focus {
@@ -114,8 +119,8 @@ p {
 	.row {
 		.dropdown-item {
 			font-size: 13px;
-			padding: .25rem 1.5rem;
-			width: 10%;
+			padding: .25rem 0rem;
+			width: 0%;
 			text-transform: capitalize;
 		}
 		.col-lg-3 {
@@ -126,7 +131,7 @@ p {
 				background-color: unset;
 				color: $color-blue;
 			}
-			padding: 1em;
+			padding: 1em 6.6em;
 		}
 		display: contents;
 		margin-left: auto;
@@ -197,6 +202,13 @@ p {
 }
 
 .carousel-top .carousel-item {
+	.stay-middle {
+		right: 13%;
+		left: 13%;
+	}
+	.padding-left {
+		padding-left: 10.8rem;
+	}
 	img {
 		height: fit-content;
 	}
@@ -217,8 +229,8 @@ p {
 		cursor: auto;
 	}
 	position: absolute;
-	right: 19.5%;
-	left: 19.5%;
+	right: auto;
+	left: auto;
 	z-index: 10;
 	color: $color-white;
 	text-align: center; 
@@ -270,30 +282,146 @@ p {
 /*-------------Work cards--------------*/
 .work-cards {
 	background-color: $color-gray;
+	.title-cards {
+		padding-bottom: 1em;
+	}
 }
 
-.title-cards {
+.work-cards-head {
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+	}
 	h1 {
-		margin: auto;
-		padding-top: 1em;
-		padding-bottom: 1.3em;
-		hr {
-			background-color: $color-white;
-		}
-	}
-	#hr-1-card {
-		margin: 0.6em auto;
-		float: left;
-		width: 10em;
-	}
-	#hr-2-card {
-		margin: 0.6em auto;
-		width: 10em;
-		float: right;
+		color: white;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 1.5em;
+		padding-bottom: 0.3em;
 	}
 }
 
+.hr-line-1-cards {
+	hr {
+		border-top: 2.4px solid #8b8b8b;
+		margin: 0;
+		opacity: 0.2; 
+	}
+	width: 23em;
+	float: left;
+	margin-top: 5.25em; 
+}
 
+.hr-line-2-cards {
+	hr {
+		border-top: 2.4px solid #8b8b8b;
+		margin: 0;
+		opacity: 0.2; 
+	}
+	width: 23em;
+	float: right;
+	margin-top: 5.25em; 
+}
+
+.work-cards-1 {
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+		padding-bottom: 2.45em;
+	}
+	.distance {
+		margin-left: 2.45em;
+	}
+}
+
+.heart {
+	color: black;
+	font-size: 1.07em;
+	padding: 0.224em;
+}
+  
+.work-card-1 {
+	img {
+		border-top-left-radius: 0.511em;
+		border-top-right-radius: 0.511em; 
+	}
+	h6 {
+		margin: 11px 0px;
+		font-size: 1em;
+	}
+    width: 15.5em;
+    height: 21em;
+	text-align: center;
+	font-family: arial;
+	background-color: $color-white;
+	border-radius: 0.650em; 
+}
+
+/*-------------Work cards Hidden--------------*/
+
+.work-cards-1-hidden {
+	.content {
+		display: none;
+	}
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+		padding-bottom: 2.45em;
+	}
+	.distance {
+		margin-left: 2.45em;
+	}
+}
+
+/*------------Work cards button---------*/
+.work-card-button {
+	i {
+		color: $color-white;
+		transform: rotate(225deg); 
+	}
+	display: flex;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: $color-gray;
+	padding: 0px 20px 20px 20px;
+	z-index: 0; 
+}
+
+  
+#loadMore {
+	width: 15em;
+	height: 3.2em;
+	color: $color-white;
+	display: block;
+	text-align: center;
+	margin: 1em auto 2.2em auto;
+	padding: 9.45px 8px 8px 17px;
+	border-radius: 8em;
+	border: 1.5px solid $color-white;
+	background-color: transparent;
+	text-transform: uppercase;
+	transition: .3s;
+	font-family: 'Lato Regular'; 
+}
+  
+#loadMore:hover {
+	color: $color-white;
+	background-color: $color-blue;
+	border: 1.5px solid $color-white;
+	text-decoration: none; 
+	border: 1.5px solid $color-blue;
+}
+  
+.noContent {
+	color: #9b9b9b !important;
+	background-color: transparent !important;
+	padding-top: .8em !important;
+	pointer-events: none;
+	font-size: .9em;
+	text-transform: lowercase !important;
+	border: transparent !important;
+}
 
 /*-------------Work cards end--------------*/
 
