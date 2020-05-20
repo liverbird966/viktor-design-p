@@ -98,7 +98,9 @@
       <div class="nav-icons">
         <button class="mr-3"><img src="images/search.svg"></button>
         <button onclick="document.getElementById('log-in').style.display='flex'" class="ml-3 mr-3"><img src="images/user.svg"></button>
-        <button class="ml-3 mr-1"><img src="images/heart.svg"></button>
+        <button class="ml-3 mr-1"><img src="images/heart.svg">
+          <asp:Label ID="HeartCount" runat="server" CssClass="badge badge-warning" ForeColor="White"/><span class="num-heart">0</span></a>
+        </button>
       </div>
 
     </div>
