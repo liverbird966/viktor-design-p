@@ -98,6 +98,9 @@
       <div class="nav-icons">
         <button class="mr-3"><img src="images/search.svg"></button>
         <button onclick="document.getElementById('log-in').style.display='flex'" class="ml-3 mr-3"><img src="images/user.svg"></button>
+        <button class="ml-3 mr-1"><img src="images/like-light.svg">
+          <asp:Label ID="LikeCount" runat="server" CssClass="badge badge-warning" ForeColor="White"/><span class="num-like">0</span></a>
+        </button>
         <button class="ml-3 mr-1"><img src="images/heart.svg">
           <asp:Label ID="HeartCount" runat="server" CssClass="badge badge-warning" ForeColor="White"/><span class="num-heart">0</span></a>
         </button>
@@ -194,7 +197,8 @@
                   <h6>Cover <br>
                       Palms on back
                   </h6>
-                  <p class="heart">0</p>
+                  <p class="heart"><img src="images/heart.svg" class="add-heart"></p>
+                  <p class="like"><img src="images/like-light.svg" class="add-like"></p>
               </div>
             </div>
 
@@ -204,7 +208,8 @@
                   <h6>Face <br>
                       Paint Texture
                   </h6>
-                  <p class="heart">0</p>
+                  <p class="heart"><img src="images/heart.svg" class="add-heart"></p>
+                  <p class="like"><img src="images/like-light.svg" class="add-like"></p>
               </div>
             </div>
 
@@ -214,7 +219,8 @@
                   <h6>Effect <br>
                       Double Exposure
                   </h6>
-                  <p class="heart">0</p>
+                  <p class="heart"><img src="images/heart.svg" class="add-heart"></p>
+                  <p class="like"><img src="images/like-light.svg" class="add-like"></p>
               </div>
             </div>
 
@@ -224,7 +230,8 @@
                   <h6>Effect <br>
                       Circle lines
                   </h6>
-                  <p class="heart">0</p>
+                  <p class="heart"><img src="images/heart.svg" class="add-heart"></p>
+                  <p class="like"><img src="images/like-light.svg" class="add-like"></p>
               </div>
             </div>
 
@@ -242,7 +249,8 @@
                   <h6>Dream Land<br>
                       Lost Castle
                   </h6>
-                  <p class="heart">0</p>
+                  <p class="heart"><img src="images/heart.svg" class="add-heart"></p>
+                  <p class="like"><img src="images/like-light.svg" class="add-like"></p>
               </div>
             </div>
 
@@ -252,7 +260,8 @@
                   <h6>Caricature <br>
                       Face Edit
                   </h6>
-                  <p class="heart">0</p>
+                  <p class="heart"><img src="images/heart.svg" class="add-heart"></p>
+                  <p class="like"><img src="images/like-light.svg" class="add-like"></p>
               </div>
             </div>
 
@@ -262,7 +271,8 @@
                   <h6>Sunset <br>
                       Boat Above Clouds
                   </h6>
-                  <p class="heart">0</p>
+                  <p class="heart"><img src="images/heart.svg" class="add-heart"></p>
+                  <p class="like"><img src="images/like-light.svg" class="add-like"></p>
               </div>
             </div>
 
@@ -272,7 +282,8 @@
                   <h6>Effect <br>
                       Angel Wings
                   </h6>
-                  <p class="heart">0</p>
+                  <p class="heart"><img src="images/heart.svg" class="add-heart"></p>
+                  <p class="like"><img src="images/like-light.svg" class="add-like"></p>
               </div>
             </div>
 
@@ -306,16 +317,16 @@
     </div>
     <div class="slide-on-top slider">
       <div class="slider-img-u-menu">
-            <img src="images/slider-image-7.jpg" alt="slider-image-7">
+            <img src="images/slider-image-1.png" alt="slider-image-7">
       </div>
       <div class="slider-img-u-menu">
-        <img src="images/slider-image-2.jpg" alt="slider-image-2">
+        <img src="images/slider-image-3.png" alt="slider-image-2">
       </div>
       <div class="slider-img-u-menu">
-        <img src="images/slider-image-5.jpg" alt="slider-image-5">
+        <img src="images/slider-image-2.png" alt="slider-image-5">
       </div>
       <div class="slider-img-u-menu">
-        <img src="images/slider-image-1.jpg" alt="slider-image-4">
+        <img src="images/slider-image-4.png" alt="slider-image-4">
       </div>
     </div>
   </div>
@@ -435,5 +446,28 @@
 <script src="js/load-more-homepage.js"></script>
 <script src="js/login-pop-up.js"></script>
 <script src="js/login-pop-up-visibility.js"></script>
+<script>
+  $( function() {
+  var heartCount = sessionStorage.getItem('heartCount');
+  heartCount = heartCount ? parseInt(heartCount) : 0;
+  var $numHeart = $('.num-heart');
+  $numHeart.text(heartCount);
+  $('.add-heart').click( function() {
+      $numHeart.text(++heartCount);
+      sessionStorage.setItem('heartCount', heartCount);
+  });
+});
+
+$( function() {
+  var likeCount = sessionStorage.getItem('likeCount');
+  likeCount = likeCount ? parseInt(likeCount) : 0;
+  var $numLike = $('.num-like');
+  $numLike.text(likeCount);
+  $('.add-like').click( function() {
+      $numLike.text(++likeCount);
+      sessionStorage.setItem('likeCount', likeCount);
+  });
+});
+</script>
 </body>
 </html>

@@ -141,7 +141,7 @@ p {
   box-shadow: none; }
 
 .selectors-l-m {
-  margin: 0 11em 0 1em; }
+  margin: 0 7em 0 1em; }
 
 .lang-selector {
   margin: 0;
@@ -154,6 +154,17 @@ p {
 /*-----------------Heart number----------------------------------*/
 #HeartCount {
   margin-left: 3px;
+  margin-top: -34px;
+  border: 1.5px solid #5383d3;
+  border-radius: 8em;
+  position: absolute;
+  font-size: 0.73em;
+  background: #fff;
+  color: #5383d3;
+  padding: 0 5px; }
+
+#LikeCount {
+  margin-left: 2px;
   margin-top: -34px;
   border: 1.5px solid #5383d3;
   border-radius: 8em;
@@ -396,9 +407,34 @@ input[type=text], input[type=password] {
   margin-left: 2.45em; }
 
 .heart {
-  color: black;
-  font-size: 1.07em;
-  padding: 0.224em; }
+  float: right;
+  padding-right: 4.5em; }
+  .heart img {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    filter: invert(33%) sepia(132%) saturate(2404%) hue-rotate(-349deg) brightness(16%) contrast(55%); }
+    .heart img:hover {
+      content: url(../images/heart-full.svg);
+      width: 2em;
+      height: 2em;
+      cursor: pointer;
+      filter: invert(34%) sepia(132%) saturate(2404%) hue-rotate(342deg) brightness(85%) contrast(165%); }
+
+.like {
+  float: left;
+  padding-left: 4.5em; }
+  .like img {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    filter: invert(33%) sepia(132%) saturate(2404%) hue-rotate(-349deg) brightness(16%) contrast(55%); }
+    .like img:hover {
+      content: url(../images/like.svg);
+      width: 2em;
+      height: 2em;
+      cursor: pointer;
+      filter: invert(75%) sepia(307%) saturate(1558%) hue-rotate(539deg) brightness(68%) contrast(149%); }
 
 .work-card-1 {
   width: 15.5em;
@@ -411,7 +447,7 @@ input[type=text], input[type=password] {
     border-top-left-radius: 0.511em;
     border-top-right-radius: 0.511em; }
   .work-card-1 h6 {
-    margin: 11px 0px;
+    margin: 11px 0px 5px 0px;
     font-size: .93em; }
 
 /*-------------Work cards Hidden--------------*/
@@ -440,7 +476,7 @@ input[type=text], input[type=password] {
     transform: rotate(225deg); }
 
 #loadMore {
-  width: 15em;
+  width: 13em;
   height: 3em;
   color: #fff;
   display: block;
