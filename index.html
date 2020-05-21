@@ -446,28 +446,6 @@
 <script src="js/load-more-homepage.js"></script>
 <script src="js/login-pop-up.js"></script>
 <script src="js/login-pop-up-visibility.js"></script>
-<script>
-  $( function() {
-  var heartCount = sessionStorage.getItem('heartCount');
-  heartCount = heartCount ? parseInt(heartCount) : 0;
-  var $numHeart = $('.num-heart');
-  $numHeart.text(heartCount);
-  $('.add-heart').click( function() {
-      $numHeart.text(++heartCount);
-      sessionStorage.setItem('heartCount', heartCount);
-  });
-});
-
-$( function() {
-  var likeCount = sessionStorage.getItem('likeCount');
-  likeCount = likeCount ? parseInt(likeCount) : 0;
-  var $numLike = $('.num-like');
-  $numLike.text(likeCount);
-  $('.add-like').click( function() {
-      $numLike.text(++likeCount);
-      sessionStorage.setItem('likeCount', likeCount);
-  });
-});
-</script>
+<script src="js/like-heart.js"></script>
 </body>
 </html>
