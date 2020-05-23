@@ -303,10 +303,10 @@ input[type=text], input[type=password] {
 /*-------------------Breadcrumb-----------------*/
 .breadcrumb {
   background-color: transparent;
-  padding: 2em 0em 0em 0em;
+  padding: 2.7em 0em 0em 0em;
   margin-bottom: 0.7rem;
   font-family: 'Lato Regular';
-  font-size: 1.08em; }
+  font-size: .95em; }
 
 .breadcrumb-item.active {
   color: #262a32; }
@@ -358,7 +358,12 @@ input[type=text], input[type=password] {
     display: contents; }
     .box-inside .input-group input[type=text] {
       width: 20em;
-      margin: 0 0 2em 1em; }
+      margin: 0 0 2em 1em;
+      background-image: url(../images/search.svg);
+      background-repeat: no-repeat;
+      background-position-x: 17.6em;
+      background-position-y: .68em;
+      background-size: 1.3em 1.3em; }
   .box-inside .img-attention {
     position: absolute;
     width: 27em;
