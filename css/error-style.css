@@ -1,19 +1,20 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 /*------------Global-----------------*/
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
 body {
-  font-family: Lato; }
+  font-family: Lato;
+  background-color: lightgray; }
 
 a {
   text-decoration: none;
   outline: none;
   font-family: 'Lato Regular'; }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Lato ExtraBold"; }
 
 h6 {
@@ -295,302 +296,52 @@ input[type=text], input[type=password] {
     transform: scale(1); } }
 
 /*-----------------------login popup----end-------------------*/
-/*----------------Carousel on top-----------------*/
-.carousel-top .carousel {
-  height: 26em; }
-
-.carousel-top .carousel-item {
-  height: 26em; }
-  .carousel-top .carousel-item .stay-middle {
-    right: 13%;
-    left: 13%; }
-  .carousel-top .carousel-item .padding-left {
-    padding-left: 10.8rem; }
-  .carousel-top .carousel-item img {
-    height: fit-content; }
-
-.carousel-top .carousel-caption {
-  position: absolute;
-  right: auto;
-  left: auto;
-  z-index: 10;
-  color: #fff;
-  text-align: center; }
-  .carousel-top .carousel-caption p1 {
-    width: -webkit-fill-available; }
-  .carousel-top .carousel-caption h1 {
-    padding-bottom: 0.5em;
-    font-size: 3em; }
-  .carousel-top .carousel-caption a {
-    text-decoration: none;
-    font-family: 'Lato Regular';
-    cursor: auto; }
-
-.carousel-top .carousel-indicators {
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 0.7em; }
-  .carousel-top .carousel-indicators li {
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    border: 3px solid transparent;
-    margin-left: 0.4em;
-    margin-right: 0.4em; }
-    .carousel-top .carousel-indicators li.active {
-      background: transparent;
-      border: 3px solid #fff;
-      width: 12px;
-      height: 12px; }
-
-.carousel-top .button_carousel_1 {
-  cursor: pointer;
-  width: 10.5em;
-  height: 2.8em;
-  color: #fff;
-  display: block;
-  text-align: center;
-  margin: 2.8em auto 2em auto;
-  padding: 0;
-  border-radius: 9em;
-  border: 1.5px solid #fff;
+/*-------------------Breadcrumb-----------------*/
+.breadcrumb {
   background-color: transparent;
-  text-transform: uppercase;
-  transition: .3s; }
-  .carousel-top .button_carousel_1:hover {
-    color: #fff;
-    background-color: #5383d3;
-    text-decoration: none;
-    border: 1.5px solid #5383d3; }
+  padding: 2em 0em 0em 0em;
+  margin-bottom: 0.7rem;
+  font-family: 'Lato Regular';
+  font-size: 1.08em; }
 
-/*----------------Carousel on top end-----------------*/
-/*-------------Work cards--------------*/
-.work-cards {
-  background-color: #262a32; }
-  .work-cards .title-cards {
-    padding-bottom: 1em; }
+.breadcrumb-item.active {
+  color: #262a32; }
 
-.work-cards-head .row {
-  margin-right: 0;
-  margin-left: 0; }
+.breadcrumb-item a {
+  color: #5383d3;
+  text-decoration: none; }
 
-.work-cards-head h1 {
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1.5em;
-  padding-bottom: 0.3em; }
-
-.hr-line-1-cards {
-  width: 23em;
+/*-------------------Breadcrumb end-----------------*/
+/*-------------------Error field-----------------*/
+.hr-line-1-items {
+  width: 28em;
   float: left;
-  margin-top: 5.25em; }
-  .hr-line-1-cards hr {
-    border-top: 2.4px solid #8b8b8b;
-    margin: 0;
-    opacity: 0.2; }
+  margin-right: 3.2em;
+  padding-top: 3.6em; }
+  .hr-line-1-items hr {
+    border-top: 2px solid #b8b8b8;
+    margin: 0; }
 
-.hr-line-2-cards {
-  width: 23em;
+.hr-line-2-items {
+  width: 28em;
   float: right;
-  margin-top: 5.25em; }
-  .hr-line-2-cards hr {
-    border-top: 2.4px solid #8b8b8b;
-    margin: 0;
-    opacity: 0.2; }
+  margin-left: 3.2em;
+  padding-top: 3.6em; }
+  .hr-line-2-items hr {
+    border-top: 2px solid #b8b8b8;
+    margin: 0; }
 
-.work-cards-1 .row {
-  margin-right: 0;
+.heading-items h3 {
+  font-size: 4em;
+  padding-bottom: 0.3em;
+  padding-top: 0.16em;
+  color: #262a32; }
+
+.error-box .row {
   margin-left: 0;
-  padding-bottom: 2.45em; }
+  margin-right: 0; }
 
-.work-cards-1 .distance {
-  margin-left: 2.45em; }
-
-.heart {
-  float: right;
-  padding-right: 4.5em; }
-  .heart img {
-    width: 2em;
-    height: 2em;
-    cursor: pointer;
-    filter: invert(33%) sepia(132%) saturate(2404%) hue-rotate(-349deg) brightness(16%) contrast(55%); }
-    .heart img:hover {
-      content: url(../images/heart-full.svg);
-      width: 2em;
-      height: 2em;
-      cursor: pointer;
-      filter: invert(34%) sepia(132%) saturate(2404%) hue-rotate(342deg) brightness(85%) contrast(165%); }
-
-.like {
-  float: left;
-  padding-left: 4.5em; }
-  .like img {
-    width: 2em;
-    height: 2em;
-    cursor: pointer;
-    filter: invert(33%) sepia(132%) saturate(2404%) hue-rotate(-349deg) brightness(16%) contrast(55%); }
-    .like img:hover {
-      content: url(../images/like.svg);
-      width: 2em;
-      height: 2em;
-      cursor: pointer;
-      filter: invert(75%) sepia(307%) saturate(1558%) hue-rotate(539deg) brightness(68%) contrast(149%); }
-
-.work-card-1 {
-  width: 15.5em;
-  height: 21em;
-  text-align: center;
-  font-family: arial;
-  background-color: #fff;
-  border-radius: 0.650em; }
-  .work-card-1 img {
-    border-top-left-radius: 0.511em;
-    border-top-right-radius: 0.511em; }
-  .work-card-1 h6 {
-    margin: 11px 0px 5px 0px;
-    font-size: .93em; }
-
-/*-------------Work cards Hidden--------------*/
-.work-cards-1-hidden .content {
-  display: none; }
-
-.work-cards-1-hidden .row {
-  margin-right: 0;
-  margin-left: 0;
-  padding-bottom: 2.45em; }
-
-.work-cards-1-hidden .distance {
-  margin-left: 2.45em; }
-
-/*------------Work cards button---------*/
-.work-card-button {
-  display: flex;
-  width: 100%;
-  height: auto;
-  margin: auto;
-  background: #262a32;
-  padding: 0px 20px 20px 20px;
-  z-index: 0; }
-  .work-card-button i {
-    color: #fff;
-    transform: rotate(225deg); }
-
-#loadMore {
-  width: 13em;
-  height: 3em;
-  color: #fff;
-  display: block;
-  text-align: center;
-  margin: 1em auto 2.2em auto;
-  padding: 8px;
-  border-radius: 8em;
-  border: 1.5px solid #fff;
-  background-color: transparent;
-  text-transform: uppercase;
-  transition: .3s;
-  font-family: 'Lato Regular'; }
-
-#loadMore:hover {
-  color: #fff;
-  background-color: #5383d3;
-  border: 1.5px solid #fff;
-  text-decoration: none;
-  border: 1.5px solid #5383d3; }
-
-.noContent {
-  color: #9b9b9b !important;
-  background-color: transparent !important;
-  padding-top: .8em !important;
-  pointer-events: none;
-  font-size: .9em;
-  text-transform: lowercase !important;
-  border: transparent !important; }
-
-/*-------------Work cards end--------------*/
-/*-------------Full width image--------------*/
-.full-width-image {
-  position: sticky;
-  width: auto;
-  height: 100%;
-  background-image: url(../images/design-2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: auto;
-  padding: 1em 1em 1em 1em;
-  background-position: center;
-  box-shadow: inset 0 0 20em #000000; }
-
-.f-image_text {
-  position: relative;
-  text-align: center;
-  color: #fff;
-  padding: 7.9em; }
-  .f-image_text h1 {
-    font-size: 4.04em;
-    color: darkslategray; }
-  .f-image_text p {
-    font: normal 1.1em 'Cookie', cursive;
-    color: darkslategray; }
-
-/*-------------Full width image end--------------*/
-/*--------------Slider-under-menu-----------------*/
-.bg-slider {
-  background-color: #262a32;
-  padding: 1.5em; }
-
-.bg-slider .slick-slider {
-  width: 45em;
-  height: 20em;
-  margin-left: auto;
-  margin-right: auto; }
-
-.bg-slider .slick-dotted.slick-slider {
-  margin: 0px auto 40px auto; }
-
-.bg-slider .slick-prev {
-  left: 50px; }
-
-.bg-slider .slick-next {
-  right: 50px; }
-
-.bg-slider .slick-next {
-  top: -14.3%; }
-
-.bg-slider .slick-prev {
-  top: -14.3%; }
-
-.bg-slider .slick-next:before {
-  font-family: FontAwesome;
-  font-size: 26px;
-  content: "\f0a9"; }
-
-.bg-slider .slick-prev:before {
-  font-family: FontAwesome;
-  font-size: 26px;
-  content: "\f0a8"; }
-
-.slider-img-u-menu img {
-  width: 25em;
-  height: 16em;
-  padding-left: 1.5em;
-  padding-right: 4em; }
-
-.slider-menu-heading {
-  color: #fff;
-  font-family: "Lato ExtraBold";
-  text-align: center;
-  padding-bottom: 1.3em; }
-  .slider-menu-heading p {
-    font-size: larger; }
-  .slider-menu-heading hr {
-    background-color: #fff;
-    width: 35em;
-    justify-content: center;
-    display: inline-flex;
-    height: .03em;
-    opacity: .2; }
-
+/*-------------------Error field end-----------------*/
 /*-------------------Footer-----------------*/
 footer {
   position: relative;
