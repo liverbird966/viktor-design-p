@@ -30,6 +30,10 @@ p {
 *:focus {
   outline: none !important; }
 
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
 /*-------------------Menu-----------------*/
 .shadow-sm {
   box-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, 0.18) !important; }
@@ -342,6 +346,29 @@ input[type=text], input[type=password] {
   margin-right: 0; }
 
 /*-------------------Error field end-----------------*/
+/*-------------------Error field inside-----------------*/
+.box-inside {
+  background-color: #fff;
+  border-radius: .55em; }
+  .box-inside h3 {
+    padding-bottom: .5em; }
+  .box-inside h2 {
+    font-size: 4em; }
+  .box-inside .input-group {
+    display: contents; }
+    .box-inside .input-group input[type=text] {
+      width: 20em;
+      margin: 0 0 2em 1em; }
+  .box-inside .img-attention {
+    position: absolute;
+    width: 27em;
+    height: 26em;
+    background-image: url(../images/error.svg);
+    background-repeat: no-repeat;
+    background-position-x: 1em;
+    opacity: 0.05; }
+
+/*-------------------Error field inside end-----------------*/
 /*-------------------Footer-----------------*/
 footer {
   position: relative;
