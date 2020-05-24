@@ -470,6 +470,59 @@ input[type=text], input[type=password] {
   margin-left: 0.2em; }
 
 /*------------------Follow me end---------------------*/
+/*------------------Results---------------------*/
+.result-row-1 .row {
+  margin-right: 0;
+  margin-left: 0;
+  padding-bottom: 2.45em; }
+
+.result-row-1 .distance {
+  margin-left: 2.45em; }
+
+.heart {
+  float: right;
+  padding-right: 4.5em; }
+  .heart img {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    filter: invert(33%) sepia(132%) saturate(2404%) hue-rotate(-349deg) brightness(16%) contrast(55%); }
+    .heart img:hover {
+      content: url(../images/heart-full.svg);
+      width: 2em;
+      height: 2em;
+      cursor: pointer;
+      filter: invert(34%) sepia(132%) saturate(2404%) hue-rotate(342deg) brightness(85%) contrast(165%); }
+
+.like {
+  float: left;
+  padding-left: 4.5em; }
+  .like img {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    filter: invert(33%) sepia(132%) saturate(2404%) hue-rotate(-349deg) brightness(16%) contrast(55%); }
+    .like img:hover {
+      content: url(../images/like.svg);
+      width: 2em;
+      height: 2em;
+      cursor: pointer;
+      filter: invert(75%) sepia(307%) saturate(1558%) hue-rotate(539deg) brightness(68%) contrast(149%); }
+
+.result-image-row-1 {
+  width: 15.5em;
+  height: 21em;
+  text-align: center;
+  font-family: arial;
+  background-color: #fff;
+  border-radius: 0.650em; }
+  .result-image-row-1 img {
+    border-radius: 0.511em; }
+  .result-image-row-1 h6 {
+    margin: 11px 0px 5px 0px;
+    font-size: .93em; }
+
+/*------------------Results end---------------------*/
 /*-------------------Footer-----------------*/
 footer {
   position: relative;
