@@ -639,7 +639,76 @@ border: 2.9px solid $color-gray;
 	border-radius: 0.650em; 
 }
 
+.overLay {
+	border-radius: 0.450em;
+	display: block;
+	position: absolute;
+    width: 15.5em;
+    height: 21em;
+	background: linear-gradient(184deg, rgba(101, 150, 255, 0.57), rgba(0, 163, 255, 0.9));
+	transition: 0.3s;
+	opacity: 0; 
+	p {
+		font: normal 1.1em 'Cookie', cursive;
+		font-size: 2em;
+		padding-top: 1.5em;
+		color: whitesmoke;
+	}
+}
+  
+  .overLay:hover {
+	opacity: 1; 
+}
 
+/*-----------------Button-heart and plus-begin-----------------*/
+.button_heart {
+	width: 6em;
+	height: 6em;
+	display: block;
+	text-align: center;
+	margin-top: 2.5em;
+    margin-right: 1.5em;
+	float: right;
+	padding-right: 2.2em;
+	border-radius: 9em;
+	border: none;
+	background-color: white;
+	text-transform: uppercase; }
+  
+  .button_heart:active {
+	transform: scale(0.9);
+	transition: 0.3s; }
+  
+  .button_heart img {
+	width: 5.8em;
+    height: 2.5em;
+	filter: invert(34%) sepia(132%) saturate(2404%) hue-rotate(342deg) brightness(85%) contrast(165%); 
+}
+  
+  .button_like {
+	width: 6em;
+	height: 6em;
+	display: block;
+	text-align: center;
+    margin-top: 2.5em;
+    margin-left: 1.5em;
+	float: left;
+	padding-right: 2.2em;
+	border-radius: 9em;
+	border: none;
+	background-color: $color-white;
+	text-transform: uppercase; }
+  
+  .button_like:active {
+	transition: 0.3s;
+	transform: scale(0.9); }
+  
+  .button_like img {
+    width: 5.8em;
+    height: 3em;
+    margin-bottom: 0.6em;
+	filter: invert(75%) sepia(307%) saturate(1558%) hue-rotate(539deg) brightness(68%) contrast(149%);
+}
 
 /*------------------Results end---------------------*/
 /*-------------------Footer-----------------*/
