@@ -434,12 +434,132 @@ animation: animatezoom 0.6s;
 /*-------------------Gallery field end-----------------*/
 /*-------------------Gallery field inside-----------------*/
 .box-inside {
+	.text-left-side {
+		padding-left: 1.1em;
+	}
 	background-color: $color-white;
 	border-radius: .55em;
+	h6 {
+		padding: 0.5em 0.8em 0 0;
+	}
+}
 
+.select-css {
+	display: block;
+	font-size: 17px;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em 2em;
+	width: 70%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0em;
+	border: 2px solid $color-blue;
+	border-radius: 1.5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: $color-white;
+	background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E") no-repeat, #fff;
+	background-position: right 1.2em top 50%, 0 0;
+	background-size: .65em auto, 100%;
+	background-repeat: no-repeat, repeat;
+	cursor: pointer;
+	float: left; 
+}
+  
+
+/*------------------services box colors-active-state---------------
+--------------------------------------------------------------*/
+#b_white.active, #b_darkturquoise.active, #b_brown.active, #b_limegreen.active, #b_royalblue.active, #b_goldenrod.active, #b_tomato.active, #b_cornsilk.active {
+	border: 2.9px solid $color-gray; 
+}
+
+#b_white.active {
+border: 2.9px solid $color-gray; 
 }
 
 
+/*------------------services box colors---------------------------
+--------------------------------------------------------------*/
+#b_white {
+	width: 1.65em;
+	height: 1.65em;
+	border-radius: 8em;
+	text-decoration: none;
+	border: 2.9px solid transparent;
+	background-color: $color-white;
+	margin-right: 0.3em; 
+}
+
+#b_darkturquoise {
+	width: 1.65em;
+	height: 1.65em;
+	border-radius: 8em;
+	text-decoration: none;
+	border: 2.9px solid transparent;
+	background-color: darkturquoise;
+	margin-right: 0.3em; 
+}
+
+#b_brown {
+	width: 1.65em;
+	height: 1.65em;
+	border-radius: 8em;
+	text-decoration: none;
+	border: 2.9px solid transparent;
+	background-color: brown;
+	margin-right: 0.3em; 
+}
+
+#b_limegreen {
+	width: 1.65em;
+	height: 1.65em;
+	border-radius: 8em;
+	text-decoration: none;
+	border: 2.9px solid transparent;
+	background-color: limegreen;
+	margin-right: 0.3em; 
+}
+
+#b_royalblue {
+	width: 1.65em;
+	height: 1.65em;
+	border-radius: 8em;
+	text-decoration: none;
+	border: 2.9px solid transparent;
+	background-color: royalblue;
+	margin-right: 0.3em; 
+}
+
+#b_goldenrod {
+	width: 1.65em;
+	height: 1.65em;
+	border-radius: 8em;
+	text-decoration: none;
+	border: 2.9px solid transparent;
+	background-color: goldenrod;
+	margin-right: 0.3em; 
+}
+
+#b_tomato {
+	width: 1.65em;
+	height: 1.65em;
+	border-radius: 8em;
+	text-decoration: none;
+	border: 2.9px solid transparent;
+	background-color: tomato;
+	margin-right: 0.3em; 
+}
+
+#b_cornsilk {
+	width: 1.65em;
+	height: 1.65em;
+	border-radius: 8em;
+	text-decoration: none;
+	border: 2.9px solid transparent;
+	background-color: cornsilk; 
+}
 
 
 /*-------------------Gallery field inside end-----------------*/
