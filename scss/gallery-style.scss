@@ -559,7 +559,6 @@ border: 2.9px solid $color-gray;
 	background-color: cornsilk; 
 }
 /*-------------------Gallery field inside end-----------------*/
-
 /*------------------Follow me---------------------*/
 .follow-me-box {
 	h1 {
@@ -640,6 +639,9 @@ border: 2.9px solid $color-gray;
 }
 
 .overLay {
+	&:hover {
+		opacity: 1; 
+	}
 	border-radius: 0.450em;
 	display: block;
 	position: absolute;
@@ -654,10 +656,6 @@ border: 2.9px solid $color-gray;
 		padding-top: 1.5em;
 		color: whitesmoke;
 	}
-}
-  
-  .overLay:hover {
-	opacity: 1; 
 }
 
 /*-----------------Button-like and heart-begin-----------------*/
@@ -685,7 +683,7 @@ border: 2.9px solid $color-gray;
 	}
 }
   
-  .button_like {
+.button_like {
 	img {
 		width: 5.8em;
 		height: 3em;
@@ -710,8 +708,8 @@ border: 2.9px solid $color-gray;
 	}
 }
 /*-----------------Button-like and heart-end-----------------*/
-
 /*------------------Results end---------------------*/
+
 /*-------------------Footer-----------------*/
 
 footer{

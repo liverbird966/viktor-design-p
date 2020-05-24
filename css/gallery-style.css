@@ -531,14 +531,13 @@ input[type=text], input[type=password] {
   background: linear-gradient(184deg, rgba(101, 150, 255, 0.57), rgba(0, 163, 255, 0.9));
   transition: 0.3s;
   opacity: 0; }
+  .overLay:hover {
+    opacity: 1; }
   .overLay p {
     font: normal 1.1em 'Cookie', cursive;
     font-size: 2em;
     padding-top: 1.5em;
     color: whitesmoke; }
-
-.overLay:hover {
-  opacity: 1; }
 
 /*-----------------Button-like and heart-begin-----------------*/
 .button_heart {
