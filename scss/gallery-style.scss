@@ -584,6 +584,9 @@ border: 2.9px solid $color-gray;
 	.distance {
 		margin-left: 2.45em;
 	}
+	.content {
+		display: none;
+	}
 }
 
 .heart {
@@ -708,6 +711,48 @@ border: 2.9px solid $color-gray;
 	}
 }
 /*-----------------Button-like and heart-end-----------------*/
+.work-card-button {
+	display: flex;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 0px 20px 20px 20px;
+	z-index: 0;
+}
+
+  
+#loadMore {
+	width: 13em;
+	height: 3em;
+	color: $color-white;
+	display: block;
+	text-align: center;
+	margin: 1.8em auto 2.2em auto;
+	padding: 8px;
+	border-radius: 8em;
+	border: 1.5px solid $color-blue;
+	background-color: $color-blue;
+	text-transform: uppercase;
+	transition: .3s;
+	font-family: 'Lato Regular'; 
+}
+  
+#loadMore:hover {
+	color: $color-blue;
+	background-color: $color-white;
+	border: 1.5px solid $color-blue;
+	text-decoration: none;
+}
+  
+.noContent {
+	color: #9b9b9b !important;
+	background-color: transparent !important;
+	padding-top: .8em !important;
+	pointer-events: none;
+	font-size: .9em;
+	text-transform: lowercase !important;
+	border: transparent !important;
+}
 /*------------------Results end---------------------*/
 
 /*-------------------Footer-----------------*/
