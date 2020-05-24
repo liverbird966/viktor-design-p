@@ -587,7 +587,7 @@ input[type=text], input[type=password] {
     transform: scale(0.9); }
 
 /*-----------------Button-like and heart-end-----------------*/
-.work-card-button {
+.gallery-button {
   display: flex;
   width: 100%;
   height: auto;
@@ -601,7 +601,7 @@ input[type=text], input[type=password] {
   color: #fff;
   display: block;
   text-align: center;
-  margin: 1.8em auto 2.2em auto;
+  margin: 1em auto 2.2em auto;
   padding: 8px;
   border-radius: 8em;
   border: 1.5px solid #5383d3;
