@@ -454,7 +454,7 @@ animation: animatezoom 0.6s;
 	max-width: 100%;
 	box-sizing: border-box;
 	margin: 0em;
-	border: 2px solid $color-blue;
+	border: 2px solid lightgray;
 	border-radius: 1.5em;
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -469,8 +469,7 @@ animation: animatezoom 0.6s;
 }
   
 
-/*------------------services box colors-active-state---------------
---------------------------------------------------------------*/
+/*------------------services box colors-active-state--------*/
 #b_white.active, #b_darkturquoise.active, #b_brown.active, #b_limegreen.active, #b_royalblue.active, #b_goldenrod.active, #b_tomato.active, #b_cornsilk.active {
 	border: 2.9px solid $color-gray; 
 }
@@ -480,8 +479,7 @@ border: 2.9px solid $color-gray;
 }
 
 
-/*------------------services box colors---------------------------
---------------------------------------------------------------*/
+/*------------------services box colors---------------------*/
 #b_white {
 	width: 1.65em;
 	height: 1.65em;
@@ -561,8 +559,23 @@ border: 2.9px solid $color-gray;
 	background-color: cornsilk; 
 }
 
-
 /*-------------------Gallery field inside end-----------------*/
+
+/*------------------Follow me---------------------*/
+.follow-me-box {
+	h1 {
+		font-size: 4em;
+		font-family: 'Andhyta';
+	}
+	i {
+		color: black;
+	}
+	a {
+		margin-left: 0.2em;
+	}
+}
+
+/*------------------Follow me end---------------------*/
 /*-------------------Footer-----------------*/
 
 footer{
