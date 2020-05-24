@@ -540,7 +540,7 @@ input[type=text], input[type=password] {
 .overLay:hover {
   opacity: 1; }
 
-/*-----------------Button-heart and plus-begin-----------------*/
+/*-----------------Button-like and heart-begin-----------------*/
 .button_heart {
   width: 6em;
   height: 6em;
@@ -554,15 +554,13 @@ input[type=text], input[type=password] {
   border: none;
   background-color: white;
   text-transform: uppercase; }
-
-.button_heart:active {
-  transform: scale(0.9);
-  transition: 0.3s; }
-
-.button_heart img {
-  width: 5.8em;
-  height: 2.5em;
-  filter: invert(34%) sepia(132%) saturate(2404%) hue-rotate(342deg) brightness(85%) contrast(165%); }
+  .button_heart img {
+    width: 5.8em;
+    height: 2.5em;
+    filter: invert(34%) sepia(132%) saturate(2404%) hue-rotate(342deg) brightness(85%) contrast(165%); }
+  .button_heart:active {
+    transform: scale(0.9);
+    transition: 0.3s; }
 
 .button_like {
   width: 6em;
@@ -577,17 +575,16 @@ input[type=text], input[type=password] {
   border: none;
   background-color: #fff;
   text-transform: uppercase; }
+  .button_like img {
+    width: 5.8em;
+    height: 3em;
+    margin-bottom: 0.6em;
+    filter: invert(75%) sepia(307%) saturate(1558%) hue-rotate(539deg) brightness(68%) contrast(149%); }
+  .button_like:active {
+    transition: 0.3s;
+    transform: scale(0.9); }
 
-.button_like:active {
-  transition: 0.3s;
-  transform: scale(0.9); }
-
-.button_like img {
-  width: 5.8em;
-  height: 3em;
-  margin-bottom: 0.6em;
-  filter: invert(75%) sepia(307%) saturate(1558%) hue-rotate(539deg) brightness(68%) contrast(149%); }
-
+/*-----------------Button-like and heart-end-----------------*/
 /*------------------Results end---------------------*/
 /*-------------------Footer-----------------*/
 footer {
