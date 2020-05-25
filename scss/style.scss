@@ -242,9 +242,6 @@ input[type=text], input[type=password] {
   
 /*-----------------------password field-----------------------*/
 .modal {
-	hr {
-		border-top: .1em solid rgba(215, 215, 215, 1);
-	}
 	h2 {
 		font-size: 2.50em;
 		text-align: center;
@@ -932,5 +929,53 @@ footer{
  
 }
 
+
+@media (max-width: 480px) {
+	.lang-selector, .money-selector, .nav-icons, .all-slide, .work-card-button, .selectors-l-m {
+		display: none;
+	} 
+	.slider-menu-heading {
+		hr {
+			display: none;
+		}
+	}
+/*-------------------Menu-----------------*/
+.navbar-brand {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.line-1, .line-2, .line-3 {
+    width: 30px;
+    height: .2em;
+    border-radius: 8em;
+    background-color: #45413e;
+    margin: 7px 0;
+	transition: 0.4s; 
+}
+
+.change .line-1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px); 
+}
+
+.change .line-2 {
+	opacity: 0; 
+}
+
+.change .line-3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px); 
+}
+ 
+.navbar-toggler {
+	padding: .3rem 0rem;
+    position: absolute;
+	right: .7em;
+    top: .5em;
+}
+
+/*-------------------Menu end-----------------*/
+}
 
 
