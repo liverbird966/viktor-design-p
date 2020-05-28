@@ -810,8 +810,8 @@ footer {
       color: #262a32;
       padding-left: 0.7em;
       padding-bottom: 0.5em;
-      font-family: 'Lato Regular';
       font-size: 1em;
+      font-weight: 600;
       text-transform: uppercase;
       cursor: pointer; }
       .collections-mobile-menu h5:after {
@@ -843,6 +843,7 @@ footer {
       color: #262a32;
       padding-left: 0.7em;
       font-size: 1em;
+      font-weight: 600;
       text-transform: uppercase;
       cursor: pointer; }
       .art-mobile-menu h5:after {
@@ -864,6 +865,7 @@ footer {
       color: #262a32;
       padding-left: 0.7em;
       font-size: 1em;
+      font-weight: 600;
       text-transform: uppercase;
       cursor: pointer; }
       .about-mobile-menu h5:after {
@@ -885,6 +887,7 @@ footer {
       color: #262a32;
       padding-left: 0.7em;
       font-size: 1em;
+      font-weight: 600;
       text-transform: uppercase;
       cursor: pointer; }
       .contact-mobile-menu h5:after {
@@ -912,7 +915,8 @@ footer {
     background-color: #262a32;
     bottom: 0;
     z-index: 20;
-    width: -webkit-fill-available; }
+    width: -webkit-fill-available;
+    border-top: 1.1px solid rgba(128, 128, 128, 0.15); }
     .nav-icons-2 img {
       float: left;
       width: 1.8em;
@@ -944,4 +948,11 @@ footer {
   .carousel-top .carousel-item .padding-left {
     padding-left: 0em;
     padding-right: 0.4em; }
-  /*-------------------Carousel end-----------------*/ }
+  /*-------------------Carousel end-----------------*/
+  /*-------------------Work cards-----------------*/
+  .work-cards-head h1 {
+    font-size: 2em; }
+  .hr-line-1-cards, .hr-line-2-cards {
+    width: 1.5em;
+    margin-top: 4.25em; }
+  /*-------------------Work cards end-----------------*/ }
