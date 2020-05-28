@@ -947,7 +947,8 @@ footer {
     margin-bottom: -0.8em; }
   .carousel-top .carousel-item .padding-left {
     padding-left: 0em;
-    padding-right: 0.4em; }
+    padding-right: 1em;
+    margin-left: -1em; }
   /*-------------------Carousel end-----------------*/
   /*-------------------Work cards-----------------*/
   .work-cards-head h1 {
