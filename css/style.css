@@ -928,11 +928,17 @@ footer {
       padding-right: 1.2em; }
   /*-------------------Menu end-----------------*/
   /*-------------------Carousel-----------------*/
-  .carousel-top .carousel-caption h1 {
-    font-size: 2em; }
+  .carousel-top .carousel-caption {
+    padding-top: 0px;
+    padding-bottom: 60px; }
+    .carousel-top .carousel-caption h1 {
+      font-size: 2em; }
+    .carousel-top .carousel-caption p1 {
+      font-size: 0.85em; }
   .carousel-top .carousel-item .stay-middle {
     right: 0%;
-    left: 0%; }
+    left: 0%;
+    margin-bottom: -0.8em; }
   .carousel-top .carousel-item .padding-left {
     padding-left: 0.8rem;
     padding-right: 1rem; }

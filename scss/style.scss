@@ -1167,11 +1167,17 @@ footer{
 		h1 {
 			font-size: 2em;
 		}
+		p1 {
+			font-size: 0.85em;
+		}
+		padding-top: 0px;
+		padding-bottom: 60px;
 	}
 	.carousel-item {
 		.stay-middle {
 			right: 0%;
 			left: 0%;
+			margin-bottom: -0.8em;
 		}
 		.padding-left {
 			padding-left: 0.8rem;
