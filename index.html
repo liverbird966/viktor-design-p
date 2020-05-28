@@ -21,12 +21,14 @@
         <a class="navbar-brand" href="index.html">
             <img src="images/logo-2.png" alt="logo">
         </a>
-        <button onclick="hamburgerX(this)" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button onclick="hamburgerX(this)" class="toggle-button show-menu-mobile d-none">
           <div class="line-1"></div>
           <div class="line-2"></div>
           <div class="line-3"></div>
         </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+  
+      <div class="collapse navbar-collapse hide-for-mobile" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown position-static pl-2 pr-2">
             <a class="nav-link dropdown-toggle focus-line" href="#" id="navbarDropdownMenuLink" data-hover="dropdown">
@@ -77,7 +79,49 @@
           </li>
         </ul>
       </div>
+      
+<!----------------------------------- Dropdown menu mobile------------------------------------------->
+<div class="mobile-menu collapse navbar-collapse show-menu-all" style="display: none!important;">
+  <div class="collections-mobile-menu d-none">
 
+    <h5 class="show-collections-head">Collections</h5>
+      <div class="wrap-product-menu show-collection-categories">
+        <a class="dropdown-item" href="error-page.html">Anime</a>
+        <a class="dropdown-item" href="error-page.html">Art</a>
+        <a class="dropdown-item" href="error-page.html">Design</a>
+        <a class="dropdown-item" href="error-page.html">Entertainment</a> 
+        <a class="dropdown-item" href="error-page.html">Night</a>
+        <a class="dropdown-item" href="error-page.html">Landscape</a>
+        <a class="dropdown-item" href="error-page.html">Top view</a>
+        <a class="dropdown-item" href="error-page.html">Historical</a> 
+      </div>
+  </div>
+
+        <div class="art-mobile-menu d-none">
+          <h5>Art</h5>
+        </div>
+
+        <div class="about-mobile-menu d-none">
+          <h5>About</h5>
+        </div>
+
+        <div class="contact-mobile-menu d-none">
+          <h5>Contact</h5>
+        </div>
+</div>
+<!----------------------------------- Dropdown menu mobile-end--------------------------------------->
+<!----------------------------------- Icons menu mobile---------------------------------------->
+<div class="nav-icons-2 d-none">
+  <button><img src="images/search.svg"></button>
+  <button onclick="document.getElementById('log-in').style.display='flex'"><img src="images/user.svg"></button>
+  <button><img src="images/like-light.svg">
+    <asp:Label ID="LikeCount-2" runat="server" CssClass="badge badge-warning" ForeColor="White"/><span class="num-like">0</span></a>
+  </button>
+  <button><img src="images/heart.svg">
+    <asp:Label ID="HeartCount-2" runat="server" CssClass="badge badge-warning" ForeColor="White"/><span class="num-heart">0</span></a>
+  </button>
+</div>
+<!----------------------------------- Icons menu mobile end---------------------------------------->
       <div class="selectors-l-m">
         <div class="lang-selector">
           <select class="browser-default custom-select">
@@ -456,10 +500,7 @@
 <script src="js/login-pop-up.js"></script>
 <script src="js/login-pop-up-visibility.js"></script>
 <script src="js/like-heart.js"></script>
-<script>
-  function hamburgerX(x) {
-    x.classList.toggle("change");
-  }
-  </script>
+<script src="js/toggleMobile.js"></script>
+<script src="js/navMobile.js"></script>
 </body>
 </html>
