@@ -955,4 +955,19 @@ footer {
   .hr-line-1-cards, .hr-line-2-cards {
     width: 1.5em;
     margin-top: 4.25em; }
-  /*-------------------Work cards end-----------------*/ }
+  /*-------------------Work cards end-----------------*/
+  /*-------------------Footer-----------------*/
+  .footer-distributed .footer-company-about span {
+    margin-bottom: 7px;
+    margin-top: .9em; }
+  .footer-center .footer-small-screen {
+    margin-top: -.7em;
+    margin-bottom: -.6em; }
+  .footer-company-about li {
+    padding-top: .3em; }
+  .footer-icons {
+    padding-top: 1em; }
+  .year {
+    margin-top: 1em;
+    padding-bottom: 4em; }
+  /*-------------------Footer end-----------------*/ }
