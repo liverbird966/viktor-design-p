@@ -916,7 +916,7 @@ footer {
     bottom: 0;
     z-index: 20;
     width: -webkit-fill-available;
-    border-top: 1.1px solid rgba(128, 128, 128, 0.15); }
+    border-top: 1.1px solid rgba(128, 128, 128, 0.17); }
     .nav-icons-2 img {
       float: left;
       width: 1.8em;
@@ -931,7 +931,9 @@ footer {
       padding-left: 1.2em;
       padding-right: 1.2em; }
   .modal {
-    padding: 6.5em 4em 4em 4em; }
+    padding: 7em 4em 4em 4em; }
+    .modal .modal-content {
+      height: 28.6em; }
   /*-------------------Menu end-----------------*/
   /*-------------------Carousel-----------------*/
   .carousel-top .carousel-caption {
