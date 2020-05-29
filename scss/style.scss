@@ -686,6 +686,10 @@ animation: animatezoom 0.6s;
 /*-------------Full width image end--------------*/
 
 /*--------------Slider-under-menu-----------------*/
+.carousel-ready-projects-mobile {
+	display: none;
+}
+
 .bg-slider {
 	background-color: #262a32;
 	padding: 1.5em;
@@ -956,7 +960,7 @@ footer{
 
 
 @media (max-width: 480px) {
-	.lang-selector, .money-selector, .nav-icons, .all-slide, .work-card-button, .selectors-l-m, .hide-for-mobile {
+	.lang-selector, .money-selector, .nav-icons, .all-slide, .work-card-button, .selectors-l-m, .hide-for-mobile, .work-cards-1 {
 		display: none;
 	} 
 	.slider-menu-heading {
@@ -1208,6 +1212,41 @@ footer{
 .hr-line-1-cards, .hr-line-2-cards {
 	width: 1.5em;
 	margin-top: 4.25em;
+}
+
+/*-------------------Work cards carousel-----------------*/
+.carousel-ready-projects-mobile {
+	display: block;
+	padding-bottom: 1.5em;
+	.slick-dots {
+		bottom: -37px;
+		li {
+			button {
+				&:before {
+					font-size: 50px;
+					color: #cacaca;
+				}
+			}
+		}
+		.slick-active {
+			button {
+				&:before {
+					color: $color-white;
+					opacity: 0.75;
+				}
+			}
+		}
+	}   
+}
+
+// .slick-dots li.slick-active button:before
+
+
+.slider-menu-projects {
+	.work-card-1 {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 /*-------------------Work cards end-----------------*/
 

@@ -7,4 +7,11 @@ $(document).ready(function(){
       autoplaySpeed: 5000
     });
     
+    $('.slider-menu-projects').slick({
+      infinite: true,
+      speed: 600,
+      slidesToShow: 1,
+      dots: true,
+      arrows: false
+    }); 
 });
