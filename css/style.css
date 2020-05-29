@@ -555,7 +555,7 @@ input[type=text], input[type=password] {
 
 /*-------------Full width image end--------------*/
 /*--------------Slider-under-menu-----------------*/
-.carousel-ready-projects-mobile {
+.carousel-ready-projects-mobile, .recent-work-slider-mobile {
   display: none; }
 
 .bg-slider {
@@ -976,6 +976,51 @@ footer {
     margin-left: auto;
     margin-right: auto; }
   /*-------------------Work cards end-----------------*/
+  /*-------------------Recent work carousel-----------------*/
+  .recent-work-slider-mobile {
+    display: block; }
+    .recent-work-slider-mobile .separate-line-arrows {
+      padding-bottom: 1em;
+      margin-top: -2em;
+      margin-left: auto;
+      margin-right: auto; }
+      .recent-work-slider-mobile .separate-line-arrows hr {
+        border-top: 1.3px solid rgba(255, 255, 255, 0.24);
+        width: 2em;
+        margin-left: auto;
+        margin-right: auto; }
+    .recent-work-slider-mobile .slick-dots {
+      bottom: -45px; }
+      .recent-work-slider-mobile .slick-dots li button:before {
+        font-size: 50px;
+        color: #cacaca; }
+      .recent-work-slider-mobile .slick-dots .slick-active button:before {
+        color: #fff;
+        opacity: 0.75; }
+    .recent-work-slider-mobile .slider-img-u-menu img {
+      width: 17em;
+      padding: 0; }
+    .recent-work-slider-mobile .slick-dotted.slick-slider {
+      margin-bottom: 5em;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto; }
+  .slider-recent-work .slick-slide img {
+    margin-left: auto;
+    margin-right: auto; }
+  .slider-recent-work .slick-prev, .slider-recent-work .slick-next {
+    top: -13%; }
+  .slider-recent-work .slick-next {
+    right: 115px; }
+    .slider-recent-work .slick-next:before {
+      font-family: "FontAwesome";
+      content: "\f0a9"; }
+  .slider-recent-work .slick-prev {
+    left: 115px; }
+    .slider-recent-work .slick-prev:before {
+      font-family: "FontAwesome";
+      content: "\f0a8"; }
+  /*-------------------Recent work carousel end-----------------*/
   /*-------------------Footer-----------------*/
   .footer-distributed .footer-company-about span {
     margin-bottom: 7px;

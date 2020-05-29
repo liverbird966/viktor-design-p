@@ -14,4 +14,12 @@ $(document).ready(function(){
       dots: true,
       arrows: false
     }); 
+
+    $('.slider-recent-work').slick({
+      infinite: true,
+      speed: 600,
+      slidesToShow: 1,
+      dots: true,
+      arrows: true
+    }); 
 });

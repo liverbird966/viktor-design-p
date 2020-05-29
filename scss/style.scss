@@ -686,7 +686,7 @@ animation: animatezoom 0.6s;
 /*-------------Full width image end--------------*/
 
 /*--------------Slider-under-menu-----------------*/
-.carousel-ready-projects-mobile {
+.carousel-ready-projects-mobile, .recent-work-slider-mobile {
 	display: none;
 }
 
@@ -1239,9 +1239,6 @@ footer{
 	}   
 }
 
-// .slick-dots li.slick-active button:before
-
-
 .slider-menu-projects {
 	.work-card-1 {
 		margin-left: auto;
@@ -1250,6 +1247,83 @@ footer{
 }
 /*-------------------Work cards end-----------------*/
 
+/*-------------------Recent work carousel-----------------*/
+.recent-work-slider-mobile {
+	.separate-line-arrows {
+		hr {
+			border-top: 1.3px solid rgba(255, 255, 255, 0.24);
+			width: 2em;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		padding-bottom: 1em;
+		margin-top: -2em;
+		margin-left: auto;
+    	margin-right: auto;
+	}
+	display: block;
+	.slick-dots {
+		bottom: -45px;
+		li {
+			button {
+				&:before {
+					font-size: 50px;
+					color: #cacaca;
+				}
+			}
+		}
+		.slick-active {
+			button {
+				&:before {
+					color: $color-white;
+					opacity: 0.75;
+				}
+			}
+		}
+	}
+	.slider-img-u-menu {
+		img {
+			width: 17em;
+			padding: 0;
+		}
+	}
+	.slick-dotted.slick-slider {
+		margin-bottom: 5em;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.slider-recent-work {
+	.slick-slide {
+		img {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	} 
+
+	.slick-prev, .slick-next {
+		top: -13%;
+	}
+
+	.slick-next {
+		right: 115px;
+		&:before {
+			font-family: "FontAwesome";
+			content: "\f0a9";
+		}
+	}
+	.slick-prev {
+		left: 115px;
+		&:before {
+			font-family: "FontAwesome";
+			content: "\f0a8";
+		}
+	}
+}
+
+/*-------------------Recent work carousel end-----------------*/
 
 /*-------------------Footer-----------------*/
 .footer-distributed .footer-company-about {
