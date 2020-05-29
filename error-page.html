@@ -15,96 +15,142 @@
 <body>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo-2.png" alt="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown position-static pl-2 pr-2">
-            <a class="nav-link dropdown-toggle focus-line" href="#" id="navbarDropdownMenuLink" data-hover="dropdown">
-              Collections
-            </a>
-            <div class="dropdown-menu w-100" aria-labelledby="navbarDropdownMenuLink">
-              <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 line-1">
-                          <a class="dropdown-item" href="error-page.html">Anime</a>
-                          <a class="dropdown-item" href="error-page.html">Art</a>
-                          <a class="dropdown-item" href="error-page.html">Design</a>
-                          <a class="dropdown-item" href="error-page.html">Entertainment</a>                
-                    </div>
-                
-                    <div class="col-lg-3 line-2">
-                          <a class="dropdown-item" href="error-page.html">Knowledge</a>
-                          <a class="dropdown-item" href="error-page.html">Location</a>
-                          <a class="dropdown-item" href="error-page.html">Nature</a>
-                          <a class="dropdown-item" href="error-page.html">People</a>               
-                    </div>
-  
-                    <div class="col-lg-3 line-3">
-                          <a class="dropdown-item" href="error-page.html">Vehicles</a>
-                          <a class="dropdown-item" href="error-page.html">Movies</a>
-                          <a class="dropdown-item" href="error-page.html">Music</a>
-                          <a class="dropdown-item" href="error-page.html">Sports</a>
-                    </div>                 
-    
-                    <div class="col-lg-3">
-                          <a class="dropdown-item" href="error-page.html">Night</a>
-                          <a class="dropdown-item" href="error-page.html">Landscape</a>
-                          <a class="dropdown-item" href="error-page.html">Top view</a>
-                          <a class="dropdown-item" href="error-page.html">Historical</a>                
-                    </div>
-                  </div>
+  <div class="container">
+      <a class="navbar-brand" href="index.html">
+          <img src="images/logo-2.png" alt="logo">
+      </a>
+      <button onclick="hamburgerX(this)" class="toggle-button show-menu-mobile d-none">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </button>
+
+
+    <div class="collapse navbar-collapse hide-for-mobile" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown position-static pl-2 pr-2">
+          <a class="nav-link dropdown-toggle focus-line" href="#" id="navbarDropdownMenuLink" data-hover="dropdown">
+            Collections
+          </a>
+          <div class="dropdown-menu w-100" aria-labelledby="navbarDropdownMenuLink">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-3 line-1">
+                      <a class="dropdown-item" href="error-page.html">Anime</a>
+                      <a class="dropdown-item" href="error-page.html">Art</a>
+                      <a class="dropdown-item" href="error-page.html">Design</a>
+                      <a class="dropdown-item" href="error-page.html">Entertainment</a>                
+                </div>
+            
+                <div class="col-lg-3 line-2">
+                      <a class="dropdown-item" href="error-page.html">Knowledge</a>
+                      <a class="dropdown-item" href="error-page.html">Location</a>
+                      <a class="dropdown-item" href="error-page.html">Nature</a>
+                      <a class="dropdown-item" href="error-page.html">People</a>               
+                </div>
+
+                <div class="col-lg-3 line-3">
+                      <a class="dropdown-item" href="error-page.html">Vehicles</a>
+                      <a class="dropdown-item" href="error-page.html">Movies</a>
+                      <a class="dropdown-item" href="error-page.html">Music</a>
+                      <a class="dropdown-item" href="error-page.html">Sports</a>
+                </div>                 
+
+                <div class="col-lg-3">
+                      <a class="dropdown-item" href="error-page.html">Night</a>
+                      <a class="dropdown-item" href="error-page.html">Landscape</a>
+                      <a class="dropdown-item" href="error-page.html">Top view</a>
+                      <a class="dropdown-item" href="error-page.html">Historical</a>                
+                </div>
               </div>
-          </div>
-          </li>
-          <li class="nav-item pl-2 pr-2">
-            <a class="nav-link" href="#">Art</a>
-          </li>
-          <li class="nav-item pl-2 pr-2">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item pl-2 pr-2">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="selectors-l-m">
-        <div class="lang-selector">
-          <select class="browser-default custom-select">
-            <option>EN</option>
-            <option>BG</option>
-            <option>TR</option>
-          </select>
+            </div>
         </div>
-      
-      
-        <div class="money-selector">
-          <select class="browser-default custom-select">
-            <option>$ GBP</option>
-            <option>$ BGL</option>
-            <option>$ TRL</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="nav-icons">
-        <button class="mr-3"><img src="images/search.svg"></button>
-        <button onclick="document.getElementById('log-in').style.display='flex'" class="ml-3 mr-3"><img src="images/user.svg"></button>
-        <button class="ml-3 mr-1"><img src="images/like-light.svg">
-          <asp:Label ID="LikeCount" runat="server" CssClass="badge badge-warning" ForeColor="White"/><span class="num-like">0</span></a>
-        </button>
-        <button class="ml-3 mr-1"><img src="images/heart.svg">
-          <asp:Label ID="HeartCount" runat="server" CssClass="badge badge-warning" ForeColor="White"/><span class="num-heart">0</span></a>
-        </button>
-      </div>
-
+        </li>
+        <li class="nav-item pl-2 pr-2">
+          <a class="nav-link" href="#">Art</a>
+        </li>
+        <li class="nav-item pl-2 pr-2">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item pl-2 pr-2">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
     </div>
+    
+<!----------------------------------- Dropdown menu mobile------------------------------------------->
+<div class="mobile-menu collapse navbar-collapse show-menu-all" style="display: none!important;">
+<div class="collections-mobile-menu d-none">
+
+  <h5 class="show-collections-head">Collections</h5>
+    <div class="wrap-product-menu show-collection-categories">
+      <a class="dropdown-item" href="error-page.html">Anime</a>
+      <a class="dropdown-item" href="error-page.html">Art</a>
+      <a class="dropdown-item" href="error-page.html">Design</a>
+      <a class="dropdown-item" href="error-page.html">Entertainment</a> 
+      <a class="dropdown-item" href="error-page.html">Night</a>
+      <a class="dropdown-item" href="error-page.html">Landscape</a>
+      <a class="dropdown-item" href="error-page.html">Top view</a>
+      <a class="dropdown-item" href="error-page.html">Historical</a> 
+    </div>
+</div>
+
+      <div class="art-mobile-menu d-none">
+        <h5>Art</h5>
+      </div>
+
+      <div class="about-mobile-menu d-none">
+        <h5>About</h5>
+      </div>
+
+      <div class="contact-mobile-menu d-none">
+        <h5>Contact</h5>
+      </div>
+</div>
+<!----------------------------------- Dropdown menu mobile-end--------------------------------------->
+<!----------------------------------- Icons menu mobile---------------------------------------->
+<div class="nav-icons-2 d-none">
+<button><img src="images/search.svg"></button>
+<button onclick="document.getElementById('log-in').style.display='flex'"><img src="images/user.svg"></button>
+<button><img src="images/like-light.svg">
+  <asp:Label ID="LikeCount-2" runat="server" CssClass="badge badge-warning" ForeColor="White"/><span class="num-like">0</span></a>
+</button>
+<button><img src="images/heart.svg">
+  <asp:Label ID="HeartCount-2" runat="server" CssClass="badge badge-warning" ForeColor="White"/><span class="num-heart">0</span></a>
+</button>
+</div>
+<!----------------------------------- Icons menu mobile end---------------------------------------->
+    <div class="selectors-l-m">
+      <div class="lang-selector">
+        <select class="browser-default custom-select">
+          <option>EN</option>
+          <option>BG</option>
+          <option>TR</option>
+        </select>
+      </div>
+    
+    
+      <div class="money-selector">
+        <select class="browser-default custom-select">
+          <option>$ GBP</option>
+          <option>$ BGL</option>
+          <option>$ TRL</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="nav-icons">
+      <button class="mr-3"><img src="images/search.svg"></button>
+      <button onclick="document.getElementById('log-in').style.display='flex'" class="ml-3 mr-3"><img src="images/user.svg"></button>
+      <button class="ml-3 mr-1"><img src="images/like-light.svg">
+        <asp:Label ID="LikeCount" runat="server" CssClass="badge badge-warning" ForeColor="White"/><span class="num-like">0</span></a>
+      </button>
+      <button class="ml-3 mr-1"><img src="images/heart.svg">
+        <asp:Label ID="HeartCount" runat="server" CssClass="badge badge-warning" ForeColor="White"/><span class="num-heart">0</span></a>
+      </button>
+    </div>
+
+  </div>
 </nav>
 
 <div class="bread-box-field">
@@ -184,16 +230,16 @@
  <div class="container">
   <div class="footer-center col-lg-3">
     <h6>Contact</h6>
-    <div>
+    <div class="footer-small-screen">
       <i class="fa fa-map-marker"></i>
       <p>Ruse, Bulgaria</p>
     </div>
-  <div>
+  <div class="footer-small-screen">
   <i class="fa fa-phone"></i>
   <p><a href="tel:+359 878 115537">+359 878 115537</a></p>
   </div>
 
-  <div>
+  <div class="footer-small-screen">
   <i class="fa fa-envelope"></i>
   <p><a href="mailto:vicsg8@abv.bg">vicsg8@abv.bg</a></p>
   </div>
@@ -274,10 +320,13 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/year-footer.js"></script>
 <script src="js/dropdown-hover.js"></script>
 <script src="js/login-pop-up.js"></script>
 <script src="js/login-pop-up-visibility.js"></script>
 <script src="js/like-heart.js"></script>
+<script src="js/toggleMobile.js"></script>
+<script src="js/navMobile.js"></script>
 </body>
 </html>
