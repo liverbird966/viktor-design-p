@@ -699,7 +699,7 @@ footer {
     bottom: 0;
     z-index: 20;
     width: -webkit-fill-available;
-    border-top: 1.1px solid rgba(128, 128, 128, 0.18); }
+    border-top: 1.1px solid rgba(128, 128, 128, 0.2); }
     .nav-icons-2 img {
       float: left;
       width: 1.8em;
@@ -725,6 +725,14 @@ footer {
     width: 5em;
     margin-left: auto; }
   /*-------------------Head 404 end-----------------*/
+  /*-------------------Inside 404-----------------*/
+  .box-inside .img-attention {
+    width: 15em;
+    height: 15em;
+    background-position: center; }
+  .box-inside .input-group input[type=text] {
+    margin: 0 auto 2em auto; }
+  /*-------------------Inside 404 end-----------------*/
   /*-------------------Footer-----------------*/
   .footer-distributed .footer-company-about span {
     margin-bottom: 7px;
