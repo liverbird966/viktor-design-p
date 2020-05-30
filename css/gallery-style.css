@@ -1011,6 +1011,8 @@ footer {
     justify-content: center; }
     .result-row-1 .row .result-image-row-1 {
       margin: 1.5em auto; }
+  .result-row-1 .distance {
+    margin-left: auto; }
   .gallery-button {
     padding: 20px; }
   /*-------------------Results end-----------------*/
