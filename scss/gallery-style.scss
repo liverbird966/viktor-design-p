@@ -1244,8 +1244,10 @@ footer{
 /*-------------------Results-----------------*/
 .result-row-1 {
 	.row {
+		display: flex;
 		padding-bottom: 0em;
 		justify-content: center;
+		width: fit-content;
 		.result-image-row-1 {
 			margin: 1.5em auto;
 		}

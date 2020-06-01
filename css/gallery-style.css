@@ -1008,8 +1008,10 @@ footer {
   /*-------------------Filter end-----------------*/
   /*-------------------Results-----------------*/
   .result-row-1 .row {
+    display: flex;
     padding-bottom: 0em;
-    justify-content: center; }
+    justify-content: center;
+    width: fit-content; }
     .result-row-1 .row .result-image-row-1 {
       margin: 1.5em auto; }
   .result-row-1 .distance {
