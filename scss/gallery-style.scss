@@ -1244,7 +1244,6 @@ footer{
 .result-row-1 {
 	.row {
 		padding-bottom: 0em;
-		display: grid;
 		justify-content: center;
 		.result-image-row-1 {
 			margin: 1.5em auto;
@@ -1252,6 +1251,7 @@ footer{
 	}
 	.distance {
 		margin-left: auto;
+		margin-right: auto;
 	}
 }
 .gallery-button {
