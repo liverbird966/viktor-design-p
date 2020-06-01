@@ -1244,7 +1244,9 @@ footer{
 /*-------------------Results-----------------*/
 .result-row-1 {
 	.row {
-		display: flex;
+		margin-right: auto;
+		margin-left: auto;
+		display: grid;
 		padding-bottom: 0em;
 		justify-content: center;
 		width: fit-content;
@@ -1256,6 +1258,7 @@ footer{
 		margin-left: 0;
 		margin-right: 0;
 	}
+	display: contents;
 }
 .gallery-button {
 	padding: 20px;

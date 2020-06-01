@@ -1007,16 +1007,20 @@ footer {
     height: 1.25em; }
   /*-------------------Filter end-----------------*/
   /*-------------------Results-----------------*/
-  .result-row-1 .row {
-    display: flex;
-    padding-bottom: 0em;
-    justify-content: center;
-    width: fit-content; }
-    .result-row-1 .row .result-image-row-1 {
-      margin: 1.5em auto; }
-  .result-row-1 .distance {
-    margin-left: 0;
-    margin-right: 0; }
+  .result-row-1 {
+    display: contents; }
+    .result-row-1 .row {
+      margin-right: auto;
+      margin-left: auto;
+      display: grid;
+      padding-bottom: 0em;
+      justify-content: center;
+      width: fit-content; }
+      .result-row-1 .row .result-image-row-1 {
+        margin: 1.5em auto; }
+    .result-row-1 .distance {
+      margin-left: 0;
+      margin-right: 0; }
   .gallery-button {
     padding: 20px; }
   /*-------------------Results end-----------------*/
