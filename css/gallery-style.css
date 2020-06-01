@@ -1008,7 +1008,7 @@ footer {
   /*-------------------Filter end-----------------*/
   /*-------------------Results-----------------*/
   .result-row-1 {
-    display: contents; }
+    display: none; }
     .result-row-1 .row {
       margin-right: auto;
       margin-left: auto;
