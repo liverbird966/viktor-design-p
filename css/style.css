@@ -934,9 +934,11 @@ footer {
       border: none;
       padding-left: 1.2em;
       padding-right: 1.2em; }
-  .modal .modal-content {
-    height: 28.6em;
-    margin: auto; }
+  .modal {
+    padding: 1em; }
+    .modal .modal-content {
+      height: 28.6em;
+      margin: auto; }
   /*-------------------Menu end-----------------*/
   /*-------------------Carousel-----------------*/
   .carousel-top .carousel-caption {

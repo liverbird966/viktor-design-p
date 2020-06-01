@@ -965,9 +965,11 @@ footer {
       border: none;
       padding-left: 1.2em;
       padding-right: 1.2em; }
-  .modal .modal-content {
-    height: 28.6em;
-    margin: auto; }
+  .modal {
+    padding: 1em; }
+    .modal .modal-content {
+      height: 28.6em;
+      margin: auto; }
   /*-------------------Menu end-----------------*/
   /*-------------------Head Gallery-----------------*/
   .hr-line-1-items {
@@ -1007,12 +1009,12 @@ footer {
   /*-------------------Results-----------------*/
   .result-row-1 .row {
     padding-bottom: 0em;
-    display: grid;
     justify-content: center; }
     .result-row-1 .row .result-image-row-1 {
       margin: 1.5em auto; }
   .result-row-1 .distance {
-    margin-left: auto; }
+    margin-left: auto;
+    margin-right: auto; }
   .gallery-button {
     padding: 20px; }
   /*-------------------Results end-----------------*/
