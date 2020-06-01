@@ -1013,8 +1013,8 @@ footer {
     .result-row-1 .row .result-image-row-1 {
       margin: 1.5em auto; }
   .result-row-1 .distance {
-    margin-left: auto;
-    margin-right: auto; }
+    margin-left: 0;
+    margin-right: 0; }
   .gallery-button {
     padding: 20px; }
   /*-------------------Results end-----------------*/
