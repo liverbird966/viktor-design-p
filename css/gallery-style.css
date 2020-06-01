@@ -986,6 +986,9 @@ footer {
     font-size: 2.9em; }
   /*-------------------Follow text end-----------------*/
   /*-------------------Filter-----------------*/
+  .box-inside .row {
+    margin-left: auto;
+    margin-right: auto; }
   .box-inside .p-4 {
     padding: 0.6rem !important; }
   .box-inside .select-css {
@@ -1036,6 +1039,4 @@ footer {
   .year {
     margin-top: 1em;
     padding-bottom: 4em; }
-  /*-------------------Footer end-----------------*/
-  .box-inside {
-    display: none; } }
+  /*-------------------Footer end-----------------*/ }

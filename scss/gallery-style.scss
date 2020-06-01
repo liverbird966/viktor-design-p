@@ -1213,6 +1213,10 @@ footer{
 /*-------------------Follow text end-----------------*/
 /*-------------------Filter-----------------*/
 .box-inside {
+	.row {
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.p-4 {
 		padding: .6rem!important;
 	}
@@ -1295,10 +1299,4 @@ footer{
 	padding-bottom: 4em;
 }
 /*-------------------Footer end-----------------*/
-
-
-.box-inside {
-	display: none;
-}
-
 }
