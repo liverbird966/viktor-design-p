@@ -1040,4 +1040,8 @@ footer {
     padding-bottom: 4em; }
   /*-------------------Footer end-----------------*/
   .follow-me-box {
+    display: none; }
+  .gallery-box {
+    display: none; }
+  .box-inside {
     display: none; } }
