@@ -1026,6 +1026,11 @@ footer {
     margin-right: 0; }
   .gallery-button {
     padding: 20px; }
+    .gallery-button #loadMore {
+      width: 10em;
+      height: 2.8em;
+      margin: 1em auto 2.2em auto;
+      padding: 6px 8px 8px 17px; }
   /*-------------------Results end-----------------*/
   /*-------------------Footer-----------------*/
   .footer-distributed .footer-company-about span {
