@@ -1175,7 +1175,7 @@ footer{
 		padding-right: 1.2em; 
 	}
     position: fixed;
-    display: flex !important;
+    // display: flex !important;
     margin: auto;
 	padding: 1em 0em;
     background-color: $color-gray;
@@ -1183,6 +1183,7 @@ footer{
     z-index: 20;
 	width: -webkit-fill-available; 
 	border-top: 1.1px solid rgba(128, 128, 128, 0.2);
+	display: none;
 }	 
 
 .modal {
