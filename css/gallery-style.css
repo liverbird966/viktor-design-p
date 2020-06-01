@@ -989,8 +989,6 @@ footer {
   .box-inside .row {
     margin-left: auto;
     margin-right: auto; }
-  .box-inside .p-4 {
-    padding: 0.6rem !important; }
   .box-inside .select-css {
     width: 50%;
     font-size: 15px;
@@ -1008,6 +1006,10 @@ footer {
   .box-inside #b_white, .box-inside #b_darkturquoise, .box-inside #b_brown, .box-inside #b_limegreen, .box-inside #b_royalblue, .box-inside #b_goldenrod, .box-inside #b_tomato, .box-inside #b_cornsilk {
     width: 1.25em;
     height: 1.25em; }
+  .box-inside .pl-1 {
+    padding-left: 0em !important; }
+  .box-inside .pr-1 {
+    padding-right: 0em !important; }
   /*-------------------Filter end-----------------*/
   /*-------------------Results-----------------*/
   .result-row-1 .row {
