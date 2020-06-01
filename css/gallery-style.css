@@ -1038,4 +1038,6 @@ footer {
   .year {
     margin-top: 1em;
     padding-bottom: 4em; }
-  /*-------------------Footer end-----------------*/ }
+  /*-------------------Footer end-----------------*/
+  .follow-me-box {
+    display: none; } }
