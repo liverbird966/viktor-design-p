@@ -601,10 +601,27 @@
   </form>
 </div>
 <!---------------------------------------------- Popup login-end----------------------------------------------------------------------->
+<!------------------------------------Cookies policy-begin---------------------------------------------------->
+<div id="cookieBg"> 
+    <div class="container">
+        <div id="cookieConsent">
+              <div id="closeCookieConsent">
+                <img src="images/cookie-close.svg">
+              </div>
+              <h3>This website is using cookies.</h3> 
+              <p>Viktor Petrov portfolio site uses third-party cookies for statistical 
+                purposes, to know your preferences, for website performance <br>
+                and interaction with social media. If you continue browsing, I consider that you accept its use. <br>
+                You can expand this information at&nbsp;<a href="#">Cookies Policy Page</a>.
+              </p> 
+                <a class="cookieConsentOK">accept</a>
+        </div>
+    </div>
+</div>
 
-<!----------------------------------------------Responsive----------------------------------------------------------------------->
 
-<!----------------------------------------------Responsive end----------------------------------------------------------------------->
+
+<!------------------------------------Cookies policy-end---------------------------------------------------->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -620,5 +637,24 @@
 <script src="js/like-heart.js"></script>
 <script src="js/toggleMobile.js"></script>
 <script src="js/navMobile.js"></script>
+<script>
+  $(document).ready(function(){   
+    if (sessionStorage.getItem('#cookieBg, #cookieConsent') !== 'true') {
+        setTimeout(function () {
+            $("#cookieBg, #cookieConsent").fadeIn(200);
+            }, 1000);
+
+            $("#closeCookieConsent").click(function() {
+            $("#cookieConsent, #cookieBg").fadeOut(200);
+        });
+
+            $(".cookieConsentOK").click(function() {
+                sessionStorage.setItem('#cookieBg, #cookieConsent', 'true')
+                $("#cookieConsent, #cookieBg").fadeOut(200);
+            });
+
+        }
+}); 
+</script>
 </body>
 </html>

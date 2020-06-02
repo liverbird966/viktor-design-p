@@ -14,10 +14,10 @@ a {
   outline: none;
   font-family: 'Lato Regular'; }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Lato ExtraBold"; }
 
-h6 {
+h4, h5, h6 {
   font-family: "Lato Regular"; }
 
 label {
@@ -755,6 +755,96 @@ footer {
   color: #262a32;
   display: flex; }
 
+/*-----------------Cookies policy--------------------*/
+#cookieBg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding-top: 167em;
+  padding-bottom: 16em;
+  bottom: 0 !important;
+  overflow: none;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 10000;
+  margin: auto; }
+
+#cookieConsent {
+  background-color: white;
+  border-radius: 0.5em;
+  height: 10.5em;
+  font-size: 17px;
+  color: #ccc;
+  line-height: 26px;
+  padding: 1.2em;
+  position: initial;
+  bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  z-index: 9999; }
+  #cookieConsent .cookieConsentOK {
+    background-color: #5383d3;
+    border: 1.8px solid transparent;
+    color: #fff;
+    padding: 7px 38.5px;
+    margin: 1.85em auto auto auto;
+    cursor: pointer;
+    width: 14%;
+    border-radius: 2em;
+    text-transform: uppercase;
+    float: right;
+    font-size: 1.08em;
+    transition: 0.3s; }
+    #cookieConsent .cookieConsentOK:hover {
+      border: 1.8px solid #5383d3;
+      color: #5383d3;
+      background-color: white; }
+  #cookieConsent h3 {
+    float: left;
+    color: #5383d3;
+    font-size: 1.35em;
+    padding-bottom: 0.3em; }
+  #cookieConsent p {
+    float: left;
+    padding: 0;
+    margin: auto;
+    color: black;
+    line-height: 175%;
+    font-size: 0.93em; }
+    #cookieConsent p a {
+      color: #5383d3; }
+      #cookieConsent p a:hover {
+        text-decoration: underline; }
+
+#closeCookieConsent {
+  color: black;
+  float: right;
+  display: flex;
+  cursor: pointer;
+  margin: -10px -10px auto auto; }
+  #closeCookieConsent img {
+    width: 1.2em;
+    height: 1.2em; }
+    #closeCookieConsent img:hover {
+      filter: invert(75%) sepia(307%) saturate(1558%) hue-rotate(539deg) brightness(68%) contrast(149%); }
+  #closeCookieConsent:hover {
+    color: black; }
+
+#bg-img {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background-color: black;
+  background-color: rgba(255, 0, 0, 0.4);
+  padding: 4em;
+  z-index: 10000;
+  margin: auto; }
+
+/*-----------------Cookies policy-end-------------------*/
 @media (max-width: 880px) {
   .footer-distributed {
     font-size: 14px; }
@@ -1038,4 +1128,25 @@ footer {
   .year {
     margin-top: 1em;
     padding-bottom: 4em; }
-  /*-------------------Footer end-----------------*/ }
+  /*-------------------Footer end-----------------*/
+  /*-------------------Cookies-----------------*/
+  #cookieConsent {
+    padding: 1em; }
+    #cookieConsent h3 {
+      font-size: 1.13em;
+      padding-bottom: 0em; }
+    #cookieConsent p {
+      line-height: 155%;
+      font-size: .59em;
+      padding-bottom: .5em; }
+    #cookieConsent .cookieConsentOK {
+      padding: 2px 10.5px;
+      margin: auto;
+      font-size: .8em;
+      display: table-cell;
+      float: none;
+      width: 5em; }
+  #closeCookieConsent img {
+    width: .9em;
+    height: .9em; }
+  /*-------------------Cookies end-----------------*/ }
