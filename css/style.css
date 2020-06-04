@@ -89,6 +89,7 @@ p {
   background-clip: unset;
   border: none;
   border-top: 1px solid rgba(0, 0, 0, 0.17);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.17);
   border-radius: unset;
   margin: 0em; }
   .dropdown-menu .line-1, .dropdown-menu .line-2, .dropdown-menu .line-3 {
